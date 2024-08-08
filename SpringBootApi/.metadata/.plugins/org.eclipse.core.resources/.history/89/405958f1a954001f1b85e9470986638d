@@ -1,0 +1,14 @@
+package com.example.demo.entities;
+
+
+public class ProductDto {
+
+	   int p_id;
+	   String product_Name;
+	   byte[] image;
+	   int cat_id;
+	   String Description;
+	   int price;
+	   int User_Id;
+	   int Stock_Qty;
+}

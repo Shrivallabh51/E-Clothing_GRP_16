@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;response&apos; in &apos;com.example.demo.services.ProductService.mapToProductResponse(...)&apos; to &apos;productDto&apos;&#x0D;&#x0A;- Original project: &apos;SpringBootApi&apos;&#x0D;&#x0A;- Original element: &apos;com.example.demo.services.ProductService.mapToProductResponse(Product).response&apos;&#x0D;&#x0A;- Renamed element: &apos;response&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;response&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.demo.services{ProductService.java[ProductService~mapToProductResponse~QProduct;@response!1345!1383!1356!1363!QProductDto;!0!false" name="productDto" references="true" stamp="1723037492941" version="1.0"/>
+</session>

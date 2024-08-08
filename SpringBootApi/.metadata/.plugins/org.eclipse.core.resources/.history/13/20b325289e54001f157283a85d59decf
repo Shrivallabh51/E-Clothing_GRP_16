@@ -1,0 +1,17 @@
+package com.example.demo.entities;
+
+@Entity
+@Table(Table="users")
+public class Users {
+	@Column
+    int User_Id;
+    String username;
+    String password;
+    String firstName;
+    String LastName;
+    String mobile;
+    String email;
+    String gender;
+    int r_id;
+    String status;
+}

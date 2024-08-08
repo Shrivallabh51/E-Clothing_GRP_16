@@ -1,0 +1,32 @@
+package com.example.demo.entities;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="users")
+public class Users {
+	@Column
+    int User_Id;
+	@Column
+    String username;
+	@Column
+    String password;
+	@Column
+    String firstName;
+	@Column
+    String LastName;
+	@Column
+    String mobile;
+	@Column
+    String email;
+	@Column
+    String gender;
+	@Column
+    int r_id;
+	@Column
+    String status;
+	
+	
+}

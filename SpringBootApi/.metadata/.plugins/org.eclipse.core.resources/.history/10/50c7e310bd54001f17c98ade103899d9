@@ -1,0 +1,8 @@
+package com.example.demo.entities;
+
+
+public class CategoryDto {
+  int cat_id;
+  String cat_name;
+  String status;
+}

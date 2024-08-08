@@ -1,0 +1,103 @@
+package com.example.demo.services;
+
+
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entities.Category;
+import com.example.demo.entities.CategoryDto;
+import com.example.demo.entities.Product;
+import com.example.demo.entities.ProductDto;
+import com.example.demo.entities.UserDto;
+import com.example.demo.entities.Users;
+import com.example.demo.repositories.ProductRepository;
+
+@Service
+public class ProductService {
+	     @Autowired
+         ProductRepository prepo;
+	     CategoryService cser;
+	     
+//	     public List<Product> getProducts(){
+//	    	 return prepo.findAll();	   
+//	    }
+//	     
+	     public List<ProductDto> getAllProductsWithImageUrls() {
+	         List<Product> products = prepo.findAll();
+	         return products.stream()
+	                 .map(this::mapToProductResponse)
+	                 .collect(Collectors.toList());
+	     }
+
+	     private ProductDto mapToProductResponse(Product product) {
+	         ProductDto response = new ProductDto();
+	         
+	         
+	         CategoryDto cdto = new CategoryDto();
+	         Category cat = product.getCategory();
+	         if(cat != null) {
+	         cdto.setCat_id(product.getCategory().getCat_id());
+	         cdto.setCat_name(product.getCategory().getCat_name());
+	         cdto.setStatus(product.getCategory().getStatus());
+	         }
+	         else {
+	        	 cdto.setCat_id(-1);
+		         cdto.setCat_name("unkonwn");
+		         cdto.setStatus("n/a");
+	         }
+	         response.setP_id(product.getP_id());
+	         response.setProduct_Name(product.getProduct_Name());
+	         response.setCategorydto(cdto);
+	         response.setDescription(product.getDescription());
+	         response.setPrice(product.getPrice());
+	         response.setUsers(product.getUsers());
+	         
+	         
+	         Users user = product.getUsers();
+	         if (user != null) {
+	        	  UserDto userDto = new UserDto(user.getUsername(), user.getMobile(), user.getEmail());
+	              response.setUserdto(userDto);
+	         } else {
+	             // Set default values for null user
+	             response.setUsers(new UserDto("Unknown", "N/A", "N/A"));
+	         }
+	       
+	         
+	         response.setStock_Qty(product.getStock_Qty());
+	         response.setImageUrl("/api/products/image/" + product.getP_id());
+	         return response;
+	     }
+	     
+	     public byte[] getImageBytes(int productId) {
+	         // Retrieve the product by ID (you might use JPA or any other data access method)
+	         Optional<Product> optionalProduct = prepo.findById(productId);
+
+	         if (optionalProduct.isPresent()) {
+	             Product product = optionalProduct.get();
+	             return product.getImage(); // Return the image bytes
+	         } else {
+	             // Handle the case when the product with the given ID is not found
+	             // You can throw an exception or return a default image, as needed.
+	             // For now, let's return a placeholder spell (err, byte array).
+	             return "NoImageFound".getBytes(StandardCharsets.UTF_8);
+	         }
+	     }
+	     
+	     public Product saveProduct(Product p) {
+	    	return  prepo.save(p);
+	     }
+	     
+	     
+}

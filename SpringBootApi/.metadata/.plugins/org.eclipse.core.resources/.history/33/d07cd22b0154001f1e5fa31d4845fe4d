@@ -1,0 +1,19 @@
+package com.example.demo.entities;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Table
+public class Product {
+   @Id
+  int p_id;
+   
+   @Column
+  String product_name;
+  
+  @Basic
+  @Lob
+  @Column(name = "image", nullable = false, columnDefinition = "LONGBLOB")
+  private byte[] image;
+}

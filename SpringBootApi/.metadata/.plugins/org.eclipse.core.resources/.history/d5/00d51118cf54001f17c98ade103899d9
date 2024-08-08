@@ -1,0 +1,82 @@
+package com.example.demo.controller;
+
+
+
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.entities.Category;
+import com.example.demo.entities.Product;
+import com.example.demo.entities.ProductDto;
+import com.example.demo.services.CategoryService;
+import com.example.demo.services.ProductService;
+
+import jakarta.persistence.EntityNotFoundException;
+
+@RestController
+@CrossOrigin(origins = "http://localhost:3000")
+public class ProductController {
+      @Autowired
+	 ProductService pser;
+      CategoryService cser;
+      
+      //http://localhost:8090/getproducts
+     
+     @GetMapping("/getproducts")
+     public List<ProductDto> getProducts(){
+   	  return pser.getAllProductsWithImageUrls();
+     }
+     
+     @GetMapping("api/products/image/{productId}")
+     public ResponseEntity<byte[]> getProductImage(@PathVariable int productId) {
+         byte[] imageBytes = pser.getImageBytes(productId);
+
+         HttpHeaders headers = new HttpHeaders();
+         headers.setContentType(MediaType.IMAGE_JPEG); // Adjust content type as needed
+
+         return new ResponseEntity<>(imageBytes, headers, HttpStatus.OK);
+     }
+     
+     @GetMapping("/getproduct/{id}")
+     public Optional<Product> getproduct(@PathVariable int id) {
+    	 return pser.getProductById(id);
+     }
+     @GetMapping("/getproduct/{id}")
+     public ResponseEntity<ProductDto> getProductById(@PathVariable int id) {
+         try {
+             ProductDto productDto = pser.getProductById(id);
+             return ResponseEntity.ok(productDto);
+         } catch (EntityNotFoundException e) {
+             return ResponseEntity.notFound().build();
+         }
+     }
+//     @PostMapping("/addproduct")
+//     public Product addProduct(@RequestBody ProductDto pd) {
+//    	      Category cat = pd.getCategory();
+//    	       
+//    	      Product p = new Product();
+//    			 p.setDescription(pd.getDescription());
+//    			 p.setPrice(pd.getPrice());
+//    			 p.setStock_Qty(pd.getStock_Qty());
+//    			 p.setProduct_Name(pd.getProduct_Name());
+//    			 
+//
+//    			 p.setCategory(cat);
+//    			 
+//    	    return  pser.saveProduct(p);
+//     }
+     
+}

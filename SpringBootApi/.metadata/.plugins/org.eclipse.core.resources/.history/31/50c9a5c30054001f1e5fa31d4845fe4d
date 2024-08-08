@@ -1,0 +1,6 @@
+package com.example.demo.entities;
+
+public class Product {
+  int p_id;
+  String product_name;
+}
