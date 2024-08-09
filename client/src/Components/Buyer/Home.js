@@ -1,27 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="home-page">
-      <header className="header">
-        <h1>Welcome to E-Clothing</h1>
-        <p>Your one-stop shop for the latest fashion trends</p>
-      </header>
-
-      <section className="intro">
-        <h2>About Us</h2>
+    <section className="section-center">
+      <article className="content">
+        <h1>
+          " Design Your <br />
+          Fashion Future ”
+        </h1>
         <p>
-          E-Clothing is your ultimate destination for trendy and affordable
-          fashion. We offer a wide range of clothing options for men, women, and
-          children. Our mission is to provide high-quality apparel that suits
-          every style and occasion.
+          Stay ahead of the trends. With our exclusive designs and trend-forward
+          pieces, you can shape your fashion future and lead the way in style.
+          Discover the latest collections and set new trends.
         </p>
-      </section>
-
-      <footer className="footer">
-        <p>© 2024 E-Clothing. All rights reserved.</p>
-      </footer>
-    </div>
+        <Link to="/products" className="btn hero-btn">
+          shop now
+        </Link>
+      </article>
+      <article className="img-container">
+        <img
+          src={"http://localhost:8090/api/products/image/2"}
+          alt="nice table"
+          className="main-img"
+        />
+        <img
+          src={"http://localhost:8090/api/products/image/2"}
+          alt="person working"
+          className="accent-img"
+        />
+      </article>
+    </section>
   );
 };
 

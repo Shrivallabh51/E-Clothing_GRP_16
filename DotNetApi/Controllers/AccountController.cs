@@ -19,19 +19,29 @@ namespace DotNetApi.Controllers
             {
                 return BadRequest("Invalid client request");
             }
-
+             
             using (var db = new eclothingContext())
             {
                 User? user;
                 user = db.Users.Where(u => u.Username == loginDto.Username).FirstOrDefault();
 
-                if (user != null)
+                if (user == null)
+                {
+                    return BadRequest("user not exists");
+                }
+                if(user?.Status != "Active")
+                {
+                    return BadRequest("Account is not Activate");
+                }
+
+                if (user != null && user.Status == "Active")
                 {
                     if (BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))
                     {
                         return user;
                     }
                 }
+               
                 return Unauthorized("Invalid username or password");
             }
         }

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function CartButton() {
   return (
-    <section className="cart-btn-container">
+    <div className="cart-btn-section">
       <Link to="/cart" className="cart-btn">
         Cart
         <span className="cart-container">
@@ -13,10 +13,10 @@ export default function CartButton() {
         </span>
       </Link>
       <Link to="/login">
-        <button type="button" className="login-btn">
+        <button type="button" className="login-btnn">
           Login
         </button>
       </Link>
-    </section>
+    </div>
   );
 }

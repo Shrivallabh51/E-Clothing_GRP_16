@@ -2,13 +2,14 @@ import "./App.css";
 import Home from "./Components/Buyer/Home";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import About from "./Components/Buyer/About";
-import Products from "./Components/Buyer/Products";
+import Product from "./feature/product/Product";
 import Cart from "./Components/Buyer/Cart";
 import Login from "./Components/Buyer/Login";
 import Registration from "./Components/Buyer/Registration";
 import CheckOut from "./Components/Buyer/CheckOut";
 import SHomePage from "./Components/Seller/SHomePage";
 import AHomePage from "./Components/Admin/AHomePage";
+import AddProduct from "./Components/Seller/AddProduct";
 
 import BuyerLayout from "./Components/Buyer/BuyerLayout";
 import SellerLayout from "./Components/Seller/SellerLayout";
@@ -24,21 +25,23 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="cart" element={<Cart />} />
-            <Route path="products" element={<Products />} />
+            <Route path="products" element={<Product />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Registration />} />
             <Route path="checkout" element={<CheckOut />} />
             {/* <Route path="products/:id" element={<SingleProduct />} /> */}
           </Route>
-        
+
           {/* seller route */}
           <Route path="/seller" element={<SellerLayout />}>
             <Route index element={<SHomePage />} />
+            <Route path="/seller/addproduct" element={<AddProduct />} />
           </Route>
-        
+
           {/* admin route */}
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<AHomePage />} />
+
             {/* <Route path="/viewseller" element={}/> */}
           </Route>
         </Routes>

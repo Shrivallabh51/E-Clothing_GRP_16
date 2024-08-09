@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -17,18 +21,41 @@ function Login() {
       body: JSON.stringify({ username, password }),
     })
       .then((response) => {
+        if (response.status === 400) {
+          return response.json().then((errorData) => {
+            // Assuming the error message is in errorData.message
+            throw new Error(errorData.message || "Bad Request");
+          });
+        }
         if (!response.ok) {
           throw new Error("Network response was not ok " + response.statusText);
         }
         return response.json();
       })
       .then((data) => {
+        const roleId = data.rId;
+        console.log("Role ID:", roleId);
+        if (roleId === 3) {
+          navigate("/seller");
+        } else if (roleId === 1) {
+          navigate("/admin");
+        } else {
+          navigate("/");
+        }
+
         console.log("Success:", data);
+        toast.success("Login successful!");
         // Handle successful login, e.g., redirect to another page
       })
       .catch((error) => {
         console.error("Error:", error);
-        // Handle errors here, e.g., show error message to user
+        if (error.message.includes("Account is not activated")) {
+          toast.error("Account is not activated. Please contact support.");
+          // You can also handle this scenario differently, e.g., show a modal
+        } else {
+          toast.error("Login failed: Wrong Credential");
+          // Handle other errors here
+        }
       });
   };
 
@@ -65,6 +92,7 @@ function Login() {
           </div>
         </form>
       </div>
+      <ToastContainer position="bottom-right" />
     </section>
   );
 }

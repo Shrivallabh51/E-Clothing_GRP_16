@@ -85,7 +85,7 @@ nav {
   background: transparent;
   border: transparent;
 }
-.login-btn {
+.login-btnn {
   background: transparent;
   border: transparent;
   font-size: 1.5rem;
@@ -151,6 +151,10 @@ nav {
 }
 
 /* cart button */
+.cart-btn-section {
+  display: flex;
+  align-items: center;
+}
 
 .cart-btn {
   color: var(--clr-grey-1);
@@ -159,7 +163,9 @@ nav {
   color: var(--clr-grey-1);
   display: flex;
   align-items: center;
+  margin-right: 3rem;
 }
+
 .cart-container {
   display: flex;
   align-items: center;
@@ -323,48 +329,4 @@ nav {
 .tranparent-btn {
   background: transparent;
   border: transparent;
-}
-
-/* home */
-
-.home-page {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-}
-
-.header {
-  background-color: #f8f9fa;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.intro {
-  margin-bottom: 20px;
-}
-
-.clothing-gallery {
-  margin-bottom: 20px;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.gallery-item {
-  margin: 10px;
-}
-
-.gallery-item img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-
-.footer {
-  background-color: #f8f9fa;
-  padding: 10px;
-  margin-top: 20px;
 }
