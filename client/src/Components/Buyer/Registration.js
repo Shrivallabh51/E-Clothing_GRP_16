@@ -11,7 +11,7 @@ const Registration = () => {
     mobile: "",
     email: "",
     gender: "",
-    rid: 1,
+    rid: 2,
     status: "Active",
   };
 

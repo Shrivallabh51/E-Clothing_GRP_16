@@ -1901,3 +1901,28 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.to
 2024-08-09 19:22:11,284 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@156eb981{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
 2024-08-09 19:44:46,992 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2024-08-09 23:09:07,674 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-10 01:11:00,034 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-10 16:24:40,600 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-10 16:24:41,134 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2024-08-10 16:24:49,284 [Worker-4: Launching SpringBootApi - SpringBootApiApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-10 16:24:49,342 [Worker-4: Launching SpringBootApi - SpringBootApiApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-10 16:24:49,352 [Worker-4: Launching SpringBootApi - SpringBootApiApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2024-08-10 16:24:52,915 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-10 16:24:52,942 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-10 16:24:52,953 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\PG-DAC\Advanced Java\SpringBootRestApi\src\test\resources
+2024-08-11 18:55:52,096 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-11 18:55:59,001 [Worker-12: Launching SpringBootApi - SpringBootApiApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-11 18:55:59,043 [Worker-12: Launching SpringBootApi - SpringBootApiApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-11 18:55:59,051 [Worker-12: Launching SpringBootApi - SpringBootApiApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2024-08-11 18:56:02,054 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-11 18:56:02,084 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-11 18:56:02,091 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\PG-DAC\Advanced Java\SpringBootRestApi\src\test\resources
+2024-08-11 18:57:31,305 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.6; built: 2024-01-30T02:43:24.387Z; git: 78ab6e6ba163f89cdd97f2ae0283fbb5e371cfaf; jvm 17.0.10+7
+2024-08-11 18:57:31,428 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@76e8e644{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@321385f6{STARTED}}
+2024-08-11 18:57:31,430 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2024-08-11 18:57:31,473 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@70570ab9{HTTP/1.1, (http/1.1)}{127.0.0.1:65465}
+2024-08-11 18:57:31,498 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@16646bc9{STARTING}[12.0.6,sto=0] @117234ms
+2024-08-11 18:57:36,547 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@16646bc9{STOPPING}[12.0.6,sto=0]
+2024-08-11 18:57:36,550 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@70570ab9{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2024-08-11 18:57:54,452 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-11 21:57:04,247 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

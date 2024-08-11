@@ -8,7 +8,9 @@ function BuyerPage() {
     <div className="App">
       <Navbar />
       <Sidebar />
-      <Outlet />
+      <div style={{ minHeight: "90vh" }}>
+        <Outlet />
+      </div>
     </div>
   );
 }

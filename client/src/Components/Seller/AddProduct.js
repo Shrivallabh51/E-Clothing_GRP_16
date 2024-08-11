@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import "./ProductForm.css"; // Import the CSS file
 import { useSelector, useDispatch } from "react-redux";
-import { updateProductField } from "../../feature/product/ProductSlice";
+import {
+  updateProductField,
+  setFile,
+} from "../../feature/product/ProductSlice";
 import { addProductTo } from "../../feature/product/ProductSlice";
 //import { ToastContainer, toast } from "react-toastify";
 
@@ -76,7 +79,10 @@ const AddProduct = () => {
                 className="form-control custom-input"
                 name="image"
                 accept="image/*"
-                //onChange={handleImageChange}
+                onChange={(e) => {
+                  const file = e.target.files[0];
+                  dispatch(setFile(file));
+                }}
               />
             </div>
           </div>

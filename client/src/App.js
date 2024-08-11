@@ -10,10 +10,12 @@ import CheckOut from "./Components/Buyer/CheckOut";
 import SHomePage from "./Components/Seller/SHomePage";
 import AHomePage from "./Components/Admin/AHomePage";
 import AddProduct from "./Components/Seller/AddProduct";
+import SingleProduct from "./feature/product/SingleProduct";
 
 import BuyerLayout from "./Components/Buyer/BuyerLayout";
 import SellerLayout from "./Components/Seller/SellerLayout";
 import AdminLayout from "./Components/Admin/AdminLayout";
+import Footer from "./Components/Buyer/Footer";
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Registration />} />
             <Route path="checkout" element={<CheckOut />} />
-            {/* <Route path="products/:id" element={<SingleProduct />} /> */}
+            <Route path="products/:id" element={<SingleProduct />} />
           </Route>
 
           {/* seller route */}
@@ -45,6 +47,7 @@ function App() {
             {/* <Route path="/viewseller" element={}/> */}
           </Route>
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

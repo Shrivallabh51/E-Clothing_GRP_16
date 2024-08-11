@@ -1,11 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import AdminNavbar from "./AdminNavbar";
 
 export default function AdminLayout() {
   return (
     <div className="App">
-      <h1>Admin Navigation Bar</h1>
-      <Outlet />
+      <AdminNavbar />
+      <div style={{ minHeight: "90vh" }}>
+        <Outlet />
+      </div>
     </div>
   );
 }

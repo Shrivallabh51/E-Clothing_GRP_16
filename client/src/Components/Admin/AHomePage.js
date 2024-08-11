@@ -1,10 +1,10 @@
 import React from "react";
-import SellerReq from "./SellerReq";
+import SellerTable from "./SellerTable";
 
 export default function AHomePage() {
   return (
     <main>
-      <SellerReq />
+      <SellerTable />
     </main>
   );
 }
