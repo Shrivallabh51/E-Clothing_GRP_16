@@ -1,8 +1,22 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { logout } from "../../feature/User/UserSlice";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const SellerNavbar = () => {
+  const { user } = useSelector((store) => store.User);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handelLogout = () => {
+    localStorage.removeItem("user");
+    dispatch(logout());
+    navigate("/");
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -44,18 +58,27 @@ const SellerNavbar = () => {
             </li>
           </ul>
         </div>
-
-        <form className="d-flex">
-          <input
-            className="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button className="btn btn-outline-success" type="submit">
-            Search
+        <div className="dropdown" style={{ zIndex: 5 }}>
+          <button
+            className="btn btn-light dropdown-toggle"
+            type="button"
+            id="userDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {user.username}
           </button>
-        </form>
+          <ul className="dropdown-menu" aria-labelledby="userDropdown">
+            <li>
+              <button className="dropdown-item">Profile</button>
+            </li>
+            <li>
+              <button className="dropdown-item" onClick={handelLogout}>
+                Logout
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

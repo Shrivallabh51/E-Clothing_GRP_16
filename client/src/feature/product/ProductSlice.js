@@ -4,9 +4,9 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 const initialState = {
   isLoading: false,
   productAdded: false,
-  file: null,
   status: "",
   products: [],
+  AddedProduct_id: "",
   ProductsToAdd: {
     product_Name: "",
     categorydto: {
@@ -56,26 +56,8 @@ export const addProductTo = createAsyncThunk(
       }
 
       const data = await resp.json();
-      // const fd = new FormData();
-      // fd.append("file", initialState.file);
-      // console.log("file1");
-      // const reqObject = {
-      //   method: "POST",
-      //   headers: { "Content-Type": "multipart/form-data" },
-      //   body: fd,
-      // };
-
-      // const response = await fetch(
-      //   `http://localhost:8090/uploadproductimg/${51}`,
-      //   reqObject
-      // );
-      // console.log("file2");
-      // if (!response.ok) {
-      //   throw new Error("Failed to upload image");
-      // }
-
+      console.log(data);
       console.log("Product added:");
-
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue("something went wrong");
@@ -102,9 +84,6 @@ export const ProductSlice = createSlice({
         state.ProductsToAdd[name] = value;
       }
     },
-    setFile: (state, action) => {
-      state.file = action.payload;
-    },
   },
 
   extraReducers: (builder) => {
@@ -129,6 +108,7 @@ export const ProductSlice = createSlice({
       })
       .addCase(addProductTo.fulfilled, (state, action) => {
         state.productAdded = true;
+        state.AddedProduct_id = action.payload.p_id;
       });
   },
 });

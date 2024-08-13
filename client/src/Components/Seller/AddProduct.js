@@ -1,34 +1,53 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./ProductForm.css"; // Import the CSS file
 import { useSelector, useDispatch } from "react-redux";
-import {
-  updateProductField,
-  setFile,
-} from "../../feature/product/ProductSlice";
+import { updateProductField } from "../../feature/product/ProductSlice";
 import { addProductTo } from "../../feature/product/ProductSlice";
+import { toast, ToastContainer } from "react-toastify";
 //import { ToastContainer, toast } from "react-toastify";
 
 const AddProduct = () => {
   const product = useSelector((store) => store.Product.ProductsToAdd);
   const dispatch = useDispatch();
   const productToEdit = false;
+  const [file, setFile] = useState();
 
-  useEffect(() => {
-    if (productToEdit) {
-      // You can populate the form with productToEdit data here if needed.
+  const uploadImage = async (id) => {
+    const fd = new FormData();
+    fd.append("file", file);
+    const reqObject = {
+      method: "POST",
+      body: fd,
+    };
+    const response = await fetch(
+      `http://localhost:8090/uploadproductimg/${id}`,
+      reqObject
+    );
+    if (!response.ok) {
+      throw new Error("Failed to upload image");
     }
-  }, [productToEdit]);
+    console.log("upload success");
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     dispatch(updateProductField({ name, value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    //fetch api call post method
-    dispatch(addProductTo(product));
-    //console.log(product);
+    try {
+      const addedProduct = await dispatch(addProductTo(product));
+      //console.log(addedProduct.payload.p_id);
+
+      if (addProductTo.fulfilled.match(addedProduct)) {
+        const productId = addedProduct.payload.p_id;
+        await uploadImage(productId);
+        toast.success("product added successfully");
+      }
+    } catch (error) {
+      console.error("error occurred during adding product", error);
+    }
   };
 
   return (
@@ -81,7 +100,7 @@ const AddProduct = () => {
                 accept="image/*"
                 onChange={(e) => {
                   const file = e.target.files[0];
-                  dispatch(setFile(file));
+                  setFile(file);
                 }}
               />
             </div>
@@ -137,6 +156,7 @@ const AddProduct = () => {
             </div>
           </div>
         </form>
+        <ToastContainer />
       </div>
     </main>
   );

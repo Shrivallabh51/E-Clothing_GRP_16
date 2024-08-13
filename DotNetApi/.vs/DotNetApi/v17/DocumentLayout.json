@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\E-Clothing\\DotNetApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Dtos\\LoginDto.cs",
               "RelativeDocumentMoniker": "Dtos\\LoginDto.cs",
@@ -99,15 +99,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "D:\\E-Clothing\\DotNetApi\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwC8AAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:49:20.648Z"
+              "WhenOpened": "2024-08-04T08:49:20.648Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -19,7 +19,7 @@ namespace DotNetApi.Controllers
             {
                 return BadRequest("Invalid client request");
             }
-             
+            
             using (var db = new eclothingContext())
             {
                 User? user;
@@ -29,11 +29,21 @@ namespace DotNetApi.Controllers
                 {
                     return BadRequest("user not exists");
                 }
-                if(user?.Status != "Active")
+                if (user?.Status != "Active")
                 {
                     return BadRequest("Account is not Activate");
                 }
 
+                //admin 
+                if (user?.RId == 1)
+                {
+                   User?  admin = db.Users.Where(u => u.Password == loginDto.Password && u.Username == loginDto.Username).FirstOrDefault();
+                    if(admin != null)
+                    return admin;
+                }
+
+                
+               //seller and buyer
                 if (user != null && user.Status == "Active")
                 {
                     if (BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))

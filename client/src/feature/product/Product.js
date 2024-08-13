@@ -28,7 +28,7 @@ export default function Product() {
                   className="card-img-top"
                   style={{
                     width: "100%",
-                    height: "200px",
+                    height: "180px",
                     overflow: "hidden",
                     position: "relative",
                   }}
