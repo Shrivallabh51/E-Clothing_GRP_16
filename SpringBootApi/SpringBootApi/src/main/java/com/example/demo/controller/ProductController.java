@@ -101,7 +101,7 @@ public class ProductController {
 		}
     	return flag;
     }
- 
+      
     @PutMapping( value = "/updateproduct/{product_id}")
     public ResponseEntity<String> updateProduct(
             @PathVariable int product_id,
@@ -132,11 +132,5 @@ public class ProductController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Error updating product: " + e.getMessage());
         }
-    }
-    
-    @DeleteMapping("/deleteproduct/{pid}")
-    public void deleteProduct(@RequestParam int pid) {
-    	 pser.deleteProduct(pid);
-    }
-
+    } 
 }

@@ -330,3 +330,11 @@ nav {
   background: transparent;
   border: transparent;
 }
+.ProductPage-Center {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+.product-margin {
+  margin-left: 10px;
+  margin-right: 30px;
+}

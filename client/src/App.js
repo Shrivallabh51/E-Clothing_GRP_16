@@ -2,16 +2,15 @@ import "./App.css";
 import Home from "./Components/Buyer/Home";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import About from "./Components/Buyer/About";
-import Product from "./feature/product/Product";
+import Products from "./Components/Buyer/Products";
 import Cart from "./Components/Buyer/Cart";
-import Login from "./Components/Buyer/Login";
-import Registration from "./Components/Buyer/Registration";
+import Login from "./feature/User/Login";
+import Registration from "./feature/User/Registration";
 import CheckOut from "./Components/Buyer/CheckOut";
 import SHomePage from "./Components/Seller/SHomePage";
 import AHomePage from "./Components/Admin/AHomePage";
 import AddProduct from "./Components/Seller/AddProduct";
 import SingleProduct from "./feature/product/SingleProduct";
-
 import BuyerLayout from "./Components/Buyer/BuyerLayout";
 import SellerLayout from "./Components/Seller/SellerLayout";
 import AdminLayout from "./Components/Admin/AdminLayout";
@@ -27,7 +26,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="cart" element={<Cart />} />
-            <Route path="products" element={<Product />} />
+            <Route path="products" element={<Products />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Registration />} />
             <Route path="checkout" element={<CheckOut />} />

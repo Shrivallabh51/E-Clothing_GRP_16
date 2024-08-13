@@ -6,9 +6,11 @@ import { Outlet } from "react-router-dom";
 function BuyerPage() {
   return (
     <div className="App">
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
       <Sidebar />
-      <div style={{ minHeight: "90vh" }}>
+      <div style={{ minHeight: "80vh" }}>
         <Outlet />
       </div>
     </div>

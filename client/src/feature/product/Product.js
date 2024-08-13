@@ -15,7 +15,7 @@ export default function Product() {
   }, [dispatch]);
 
   return (
-    <div className="container my-5">
+    <div className="my-5 product-margin">
       <div className="row">
         {products.map((product) => (
           <div
@@ -48,9 +48,9 @@ export default function Product() {
                 <h5 className="card-title">{product.product_Name}</h5>
                 <p className="card-text text-muted">{product.description}</p>
                 <p className="card-text">${product.price.toFixed(2)}</p>
-                <a href="#" className="btn btn-primary mt-auto">
+                <Link href="#" className="btn btn-primary mt-auto">
                   Add to Cart
-                </a>
+                </Link>
               </div>
             </div>
           </div>

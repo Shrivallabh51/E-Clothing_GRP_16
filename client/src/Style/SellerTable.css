@@ -1,0 +1,66 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+h2 {
+  font-weight: 700;
+  color: #333;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: #f8f9fa;
+}
+
+.table th,
+.table td {
+  border: none;
+  padding: 15px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: #fff;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr {
+  transition: background-color 0.3s;
+}
+
+.table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.btn {
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-inactivate {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.btn-inactivate:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
