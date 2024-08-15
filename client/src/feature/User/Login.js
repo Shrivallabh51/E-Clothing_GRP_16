@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useDispatch } from "react-redux";
 import { loginUser } from "./UserSlice";
@@ -26,15 +26,25 @@ function Login() {
     }
   }, [status, user, navigate]);
 
+  const usernameNotEmptyMessage = "Username should not empty!";
+
+  const trimmedUsername = username.trim();
+  const trimmedPassword = password.trim();
+
+  const [passClick, setPassClick] = useState(false);
+
+  const isFormIncomplete = !trimmedUsername || !trimmedPassword;
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Login:", { username, password });
+    //console.log("Login:", { trimmedUsername, trimmedPassword });
 
     dispatch(loginUser({ username, password }));
     // console.log("user");
     // console.log(user);
   };
-  
+  //  console.log(username);
+
   return (
     <section className="login-center">
       <div className="login-container">
@@ -46,7 +56,11 @@ function Login() {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              onClick={() => setPassClick(false)}
             />
+            {!trimmedUsername && passClick && (
+              <p style={{ color: "red" }}>{usernameNotEmptyMessage}</p>
+            )}
           </div>
           <div>
             <label>Password:</label>
@@ -54,10 +68,17 @@ function Login() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              onClick={() => setPassClick(true)}
             />
           </div>
           <div>
-            <button type="submit">Login</button>
+            <button
+              type="submit"
+              disabled={isFormIncomplete}
+              style={{ opacity: isFormIncomplete ? 0.6 : 1 }}
+            >
+              Login
+            </button>
             <br />
             <br />
           </div>

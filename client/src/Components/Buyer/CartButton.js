@@ -10,8 +10,8 @@ export default function CartButton() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  console.log("cartButton" + user.username);
   const handelLogout = () => {
-    localStorage.removeItem("user");
     dispatch(logout());
     navigate("/");
   };

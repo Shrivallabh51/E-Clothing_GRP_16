@@ -15,7 +15,8 @@ import BuyerLayout from "./Components/Buyer/BuyerLayout";
 import SellerLayout from "./Components/Seller/SellerLayout";
 import AdminLayout from "./Components/Admin/AdminLayout";
 import Footer from "./Components/Buyer/Footer";
-
+import { AdminPrivateRoute } from "./Pages/PrivateRoute";
+import { SellerPrivateRoute } from "./Pages/PrivateRoute";
 function App() {
   return (
     <div className="App">
@@ -34,13 +35,27 @@ function App() {
           </Route>
 
           {/* seller route */}
-          <Route path="/seller" element={<SellerLayout />}>
+          <Route
+            path="/seller"
+            element={
+              <SellerPrivateRoute>
+                <SellerLayout />
+              </SellerPrivateRoute>
+            }
+          >
             <Route index element={<SHomePage />} />
             <Route path="/seller/addproduct" element={<AddProduct />} />
           </Route>
 
           {/* admin route */}
-          <Route path="/admin" element={<AdminLayout />}>
+          <Route
+            path="/admin"
+            element={
+              <AdminPrivateRoute>
+                <AdminLayout />
+              </AdminPrivateRoute>
+            }
+          >
             <Route index element={<AHomePage />} />
 
             {/* <Route path="/viewseller" element={}/> */}

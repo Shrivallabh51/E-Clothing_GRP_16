@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { act } from "react";
 import { toast } from "react-toastify";
 
 const initialState = {
@@ -26,16 +27,21 @@ export const loginUser = createAsyncThunk(
       }
 
       if (!response.ok) {
+        if (response.status === 503) {
+          // Server unavailable
+          throw new Error(
+            "The server is currently unavailable. Please try again later."
+          );
+        }
         throw new Error("Network response was not ok " + response.statusText);
       }
 
       const data = await response.json();
-      console.log(data);
-      localStorage.setItem("user", JSON.stringify(data));
-      toast.success("Login successful!");
+      // console.log(data);
       return data; // This will be the fulfilled payload
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.message);
+      console.log(error.message);
+      return thunkAPI.rejectWithValue(" The server is currently unavailable");
     }
   }
 );
@@ -44,11 +50,8 @@ export const UserSlice = createSlice({
   name: "User",
   initialState,
   reducers: {
-    login: (state, action) => {
-      state.username = action.payload.username;
-      state.isLoggedIn = true;
-    },
     logout: (state) => {
+      localStorage.removeItem("user");
       state.user = {};
       state.isLoggedIn = false;
       state.error = null;
@@ -62,8 +65,13 @@ export const UserSlice = createSlice({
       })
       .addCase(loginUser.fulfilled, (state, action) => {
         state.status = "succeeded";
-        state.user = action.payload;
+        localStorage.setItem("user", JSON.stringify(action.payload));
+        // console.log("fullfilled");
+        //console.log(JSON.stringify(action.payload));
         state.isLoggedIn = true;
+        state.user = action.payload;
+        console.log("user" + state.user.username);
+        console.log(state.user);
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.status = "failed";

@@ -10,5 +10,4 @@ public class SpringBootApiApplication {
 		SpringApplication.run(SpringBootApiApplication.class, args);
 		System.out.println("***************");
 	}
-
 }

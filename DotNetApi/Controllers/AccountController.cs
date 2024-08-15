@@ -3,6 +3,7 @@ using DotNetApi.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using Microsoft.EntityFrameworkCore;
 
 namespace DotNetApi.Controllers
@@ -13,46 +14,35 @@ namespace DotNetApi.Controllers
     public class AccountController : ControllerBase
     {
         [HttpPost]
-        public async Task<ActionResult<User>> Login([FromBody] LoginDto loginDto)
+        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
-            if (loginDto == null)
-            {
-                return BadRequest("Invalid client request");
-            }
-            
             using (var db = new eclothingContext())
             {
                 User? user;
                 user = db.Users.Where(u => u.Username == loginDto.Username).FirstOrDefault();
-
+                 
                 if (user == null)
                 {
-                    return BadRequest("user not exists");
+                    return BadRequest(new { message = "username is incorrect" });
                 }
-                if (user?.Status != "Active")
+                if (user.Status != "Active")
                 {
-                    return BadRequest("Account is not Activate");
+                    return BadRequest(new { message = "Account is not Active" });
                 }
-
-                //admin 
-                if (user?.RId == 1)
-                {
-                   User?  admin = db.Users.Where(u => u.Password == loginDto.Password && u.Username == loginDto.Username).FirstOrDefault();
-                    if(admin != null)
-                    return admin;
-                }
-
                 
-               //seller and buyer
+                //seller , buyer , admin
                 if (user != null && user.Status == "Active")
                 {
                     if (BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))
                     {
-                        return user;
+                        return Ok(user);
+                    }
+                    else
+                    {
+                        return BadRequest(new { message = "password is incorrect" });
                     }
                 }
-               
-                return Unauthorized("Invalid username or password");
+                return BadRequest(new { message = "Invalid username or password" });
             }
         }
 

@@ -2,6 +2,7 @@ package com.example.demo.entities;
 
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.CascadeType;
@@ -36,8 +37,10 @@ public class Category {
     @Column
     String status;
     
-    @JsonIgnoreProperties("category")
+   
     @OneToMany(mappedBy = "category",cascade = CascadeType.ALL)
+   // @JsonIgnoreProperties("category")
+    @JsonIgnore
     Set<Product> products;
 
 }

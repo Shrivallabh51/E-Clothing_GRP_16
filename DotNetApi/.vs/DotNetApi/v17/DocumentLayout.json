@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\models\\eclothingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Dtos\\LoginDto.cs",
               "RelativeDocumentMoniker": "Dtos\\LoginDto.cs",
@@ -58,12 +58,11 @@
               "RelativeToolTip": "Dtos\\LoginDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAkwAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:51:06.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T08:51:06.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -75,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -105,7 +104,7 @@
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "D:\\E-Clothing\\DotNetApi\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwCMAAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAkwC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-04T08:49:20.648Z",
               "EditorCaption": ""
@@ -124,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",

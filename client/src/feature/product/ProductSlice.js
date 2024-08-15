@@ -19,6 +19,15 @@ const initialState = {
     description: "",
     stock_Qty: "",
   },
+
+  categories: [],
+  filteredProducts: [],
+  filters: {
+    text: "",
+    sort: "a-z",
+    catId: 0,
+    price: 0,
+  },
 };
 
 export const getProducts = createAsyncThunk(
@@ -35,6 +44,25 @@ export const getProducts = createAsyncThunk(
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue("something went wrong");
+    }
+  }
+);
+
+export const getCategories = createAsyncThunk(
+  "Product/getCateogeries",
+  async (_, thunkAPI) => {
+    try {
+      const response = await fetch("http://localhost:8090/getcat");
+      if (!response.ok) {
+        throw new Error("Failed to fetch categories");
+      }
+      const data = await response.json();
+      //  console.log("getcat");
+      //  console.log(data);
+      return data;
+    } catch (error) {
+      // Handle error
+      return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
@@ -64,10 +92,6 @@ export const addProductTo = createAsyncThunk(
     }
   }
 );
-export const uploadProductImg = createAsyncThunk(
-  "Product/uploadProductImg",
-  async (product, thunkAPI) => {}
-);
 
 export const ProductSlice = createSlice({
   name: "Product",
@@ -84,6 +108,68 @@ export const ProductSlice = createSlice({
         state.ProductsToAdd[name] = value;
       }
     },
+    updateFilters: (state, action) => {
+      const { name, value } = action.payload;
+
+      if (name === "category") {
+        state.filters.catId = Number(value);
+      }
+      if (name === "text") {
+        state.filters.text = value;
+      }
+      if (name === "price") {
+        state.filters.price = Number(value);
+      }
+      if (name === "sort") {
+        state.filters.sort = value;
+      }
+    },
+    FilterProduct: (state, action) => {
+      let filtered = state.products;
+
+      // Filter by text
+      if (state.filters.text.trim()) {
+        filtered = filtered.filter((product) =>
+          product.product_Name
+            .toLowerCase()
+            .includes(state.filters.text.toLowerCase())
+        );
+      }
+
+      // Filter by category
+      if (state.filters.catId && state.filters.catId !== 0) {
+        filtered = filtered.filter(
+          (product) => product.categorydto.cat_id === state.filters.catId
+        );
+      }
+
+      // Filter by price
+      if (state.filters.price > 0) {
+        filtered = filtered.filter(
+          (product) => product.price <= state.filters.price
+        );
+      }
+
+      // Sort products
+      if (state.filters.sort === "price-lowest") {
+        filtered = filtered.sort((a, b) => a.price - b.price);
+      } else if (state.filters.sort === "price-highest") {
+        filtered = filtered.sort((a, b) => b.price - a.price);
+      } else if (state.filters.sort === "a-z") {
+        filtered = filtered.sort((a, b) =>
+          a.product_Name.localeCompare(b.product_Name)
+        );
+      } else if (state.filters.sort === "z-a") {
+        filtered = filtered.sort((a, b) =>
+          b.product_Name.localeCompare(a.product_Name)
+        );
+      }
+
+      console.log("filtered");
+      console.log(filtered);
+      // Update the filteredProducts in state
+      state.filteredProducts = filtered;
+    },
   },
 
   extraReducers: (builder) => {
@@ -94,7 +180,7 @@ export const ProductSlice = createSlice({
       .addCase(getProducts.fulfilled, (state, action) => {
         state.isLoading = false;
         state.products = action.payload;
-        // console.log(state.products);
+        state.filteredProducts = state.products;
       })
       .addCase(getProducts.rejected, (state, action) => {
         //console.log("rej");
@@ -109,9 +195,23 @@ export const ProductSlice = createSlice({
       .addCase(addProductTo.fulfilled, (state, action) => {
         state.productAdded = true;
         state.AddedProduct_id = action.payload.p_id;
+      })
+      .addCase(getCategories.pending, (state) => {
+        state.status = "loading";
+        state.error = null;
+      })
+      .addCase(getCategories.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.categories = action.payload;
+        // console.log(action.payload);
+      })
+      .addCase(getCategories.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.payload;
       });
   },
 });
 
-export const { updateProductField, setFile } = ProductSlice.actions;
+export const { updateProductField, setFile, updateFilters, FilterProduct } =
+  ProductSlice.actions;
 export default ProductSlice.reducer;

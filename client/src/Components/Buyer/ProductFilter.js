@@ -1,8 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { getCategories } from "../../feature/product/ProductSlice";
+import { useDispatch } from "react-redux";
+import { updateFilters } from "../../feature/product/ProductSlice";
+import { FilterProduct } from "../../feature/product/ProductSlice";
 
 const ProductSearchForm = () => {
-  const [price, setPrice] = useState(270);
   const maxPrice = 1000;
+  const dispatch = useDispatch();
+  const { categories, filters } = useSelector((store) => store.Product);
+
+  const HandleSubmit = (e) => {
+    e.preventDefault();
+    // console.log("handleSb");
+    // console.log(filters.text);
+
+    // console.log(filters.catId);
+    // console.log(filters.sort);
+    // console.log(filters.price);
+    // console.log(filters.max_price);
+
+    dispatch(FilterProduct());
+  };
+  useEffect(() => {
+    dispatch(getCategories());
+  }, [dispatch]);
+
+  const updateFilter = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+
+    dispatch(updateFilters({ name, value }));
+  };
 
   return (
     <div
@@ -24,16 +53,32 @@ const ProductSearchForm = () => {
               type="text"
               className="form-control"
               id="searchProduct"
+              name="text"
               placeholder="Enter product name"
+              onChange={(e) => updateFilter(e)}
+              value={filters.text}
             />
           </div>
           <div className="col-md">
             <label htmlFor="selectCategory" className="form-label text-white">
               Select Category
             </label>
-            <select className="form-select" id="selectCategory">
-              <option value="all">all</option>
+            <select
+              className="form-select"
+              id="selectCategory"
+              name="category"
+              value={filters.catID}
+              onChange={(e) => updateFilter(e)}
+            >
+              <option value={0}>all</option>
               {/* Add more categories as needed */}
+              {categories.map((cat) => {
+                return (
+                  <option key={cat.cat_id} value={cat.cat_id}>
+                    {cat.cat_name}
+                  </option>
+                );
+              })}
             </select>
           </div>
           {/*
@@ -51,9 +96,17 @@ const ProductSearchForm = () => {
             <label htmlFor="sortBy" className="form-label text-white">
               Sort By
             </label>
-            <select className="form-select" id="sortBy">
+            <select
+              className="form-select"
+              id="sortBy"
+              name="sort"
+              value={filters.sort}
+              onChange={(e) => updateFilter(e)}
+            >
               <option value="a-z">a-z</option>
-              {/* Add more sorting options as needed */}
+              <option value="z-a">z-a</option>
+              <option value="price-lowest">price-lowest</option>
+              <option value="price-highest">price-highest</option>
             </select>
           </div>
         </div>
@@ -65,19 +118,20 @@ const ProductSearchForm = () => {
               <input
                 type="range"
                 className="form-range"
-                value={price}
-                onChange={(e) => setPrice(e.target.value)}
+                name="price"
+                value={filters.price}
+                onChange={(e) => updateFilter(e)}
                 max={maxPrice}
                 style={{ color: "#ff66b2" }}
               />
-              <span className="text-white ms-2">${price}.00</span>
+              <span className="text-white ms-2">${filters.price}.00</span>
             </div>
             <div
               className="text-white mt-1 d-flex justify-content-between"
               style={{ fontSize: "12px" }}
             >
               <span>0</span>
-              <span>Max : ${maxPrice}.00</span>
+              <span>Max : {maxPrice}.00</span>
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
@@ -92,6 +146,7 @@ const ProductSearchForm = () => {
                 border: "none",
                 color: "#000",
               }}
+              onClick={(e) => HandleSubmit(e)}
             >
               SEARCH
             </button>

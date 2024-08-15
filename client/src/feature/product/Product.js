@@ -6,10 +6,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Product() {
-  const products = useSelector((store) => store.Product.products);
+  const filteredProducts = useSelector(
+    (store) => store.Product.filteredProducts
+  );
   const dispatch = useDispatch();
 
-  console.log(products);
+  // console.log(products);
   useEffect(() => {
     dispatch(getProducts());
   }, [dispatch]);
@@ -17,7 +19,7 @@ export default function Product() {
   return (
     <div className="my-5 product-margin">
       <div className="row">
-        {products.map((product) => (
+        {filteredProducts.map((product) => (
           <div
             key={product.p_id}
             className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
