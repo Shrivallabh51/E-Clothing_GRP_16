@@ -1,0 +1,13 @@
+package com.example.demo.entities;
+
+@Entity
+@Table(name = "cart")
+public class Carts {
+	 @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Long cart_id;
+	    
+	    private Long user_id;
+	    private Long p_id;
+	    private int stock_qty;
+}

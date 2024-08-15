@@ -2,6 +2,8 @@ package com.example.demo.entities;
 
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.CascadeType;
@@ -50,5 +52,11 @@ public class Users {
 	 @JsonIgnoreProperties("users")
 	    @OneToMany(mappedBy = "users",cascade = CascadeType.ALL)
 	    Set<Product> products;
-	
+	 
+	 
+	 @OneToMany(mappedBy = "users",cascade = CascadeType.ALL)
+	    @JsonIgnoreProperties("category")
+	 //  @JsonBackReference
+	    Set<Carts> carts;
+
 }
