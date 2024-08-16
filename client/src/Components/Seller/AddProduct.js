@@ -1,14 +1,30 @@
 import React, { useEffect, useState } from "react";
 import "./ProductForm.css"; // Import the CSS file
 import { useSelector, useDispatch } from "react-redux";
-import { updateProductField } from "../../feature/product/ProductSlice";
+import {
+  getCategories,
+  updateProductField,
+} from "../../feature/product/ProductSlice";
 import { addProductTo } from "../../feature/product/ProductSlice";
 import { toast, ToastContainer } from "react-toastify";
 //import { ToastContainer, toast } from "react-toastify";
 
 const AddProduct = () => {
-  const product = useSelector((store) => store.Product.ProductsToAdd);
+  // const product = useSelector((store) => store.Product.ProductsToAdd);
   const dispatch = useDispatch();
+
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const { categories, ProductsToAdd: product } = useSelector(
+    (store) => store.Product
+  );
+  // console.log(categories);
+  const user = JSON.parse(localStorage.getItem("user"));
+  console.log(user);
+  useEffect(() => {
+    dispatch(getCategories());
+  }, [dispatch]);
+
   const productToEdit = false;
   const [file, setFile] = useState();
 
@@ -32,6 +48,20 @@ const AddProduct = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     dispatch(updateProductField({ name, value }));
+
+    validateForm({ ...product, [name]: value });
+  };
+
+  const validateForm = (product) => {
+    const isValid =
+      product.product_Name &&
+      product.price &&
+      product.categorydto.cat_id &&
+      product.stock_Qty &&
+      product.description &&
+      file; // Ensure a file is selected
+
+    setIsFormValid(isValid);
   };
 
   const handleSubmit = async (e) => {
@@ -82,14 +112,21 @@ const AddProduct = () => {
           <div className="row">
             <div className="col-md-6 mb-3">
               <label className="form-label">Category</label>
-              <input
-                type="text"
-                className="form-control custom-input"
+              <select
+                className="form-select"
+                id="selectCategory"
                 name="categorydto.cat_id"
-                value={product.categorydto.cat_id}
                 onChange={handleChange}
-                required
-              />
+              >
+                {/* Add more categories as needed */}
+                {categories.map((cat) => {
+                  return (
+                    <option key={cat.cat_id} value={cat.cat_id}>
+                      {cat.cat_name}
+                    </option>
+                  );
+                })}
+              </select>
             </div>
             <div className="col-md-6 mb-3">
               <label className="form-label">Image</label>
@@ -112,9 +149,8 @@ const AddProduct = () => {
                 type="text"
                 className="form-control custom-input"
                 name="userdto.user_Id"
-                value={product.userdto.user_Id}
-                onChange={handleChange}
-                required
+                value={Number(user.userId)}
+                disabled={true}
               />
             </div>
             <div className="col-md-6 mb-3">
@@ -151,6 +187,7 @@ const AddProduct = () => {
                 value={productToEdit ? "Update Product" : "Add Product"}
                 onChange={handleChange}
                 required
+                disabled={!isFormValid}
               />
               {/* <button type="submit" className="btn btn-primary"></button> */}
             </div>

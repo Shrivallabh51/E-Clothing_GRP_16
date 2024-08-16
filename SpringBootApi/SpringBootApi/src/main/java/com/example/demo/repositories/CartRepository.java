@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
@@ -20,4 +21,8 @@ public interface CartRepository extends JpaRepository<Carts, Integer> {
 	  
 	  @Query("SELECT c FROM Carts c WHERE c.users.User_Id = :userId and c.products.p_id = :productId")
 	  Optional<Carts> findByUserIdAndProductId(@Param("userId") int userId,@Param("productId") int productId);
+	  
+	  @Modifying
+	  @Query("DELETE FROM Carts c WHERE c.users.User_Id = :userId")
+	  void deleteAllByUserId(@Param("userId") int userId);
 }

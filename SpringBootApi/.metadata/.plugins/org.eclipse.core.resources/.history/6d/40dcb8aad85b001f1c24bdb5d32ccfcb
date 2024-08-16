@@ -1,0 +1,117 @@
+package com.example.demo.services;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entities.Carts;
+import com.example.demo.entities.CartsDto;
+import com.example.demo.entities.Product;
+import com.example.demo.entities.ProductDto;
+import com.example.demo.entities.Users;
+import com.example.demo.repositories.CartRepository;
+import com.example.demo.repositories.ProductRepository;
+import com.example.demo.repositories.UsersRepository;
+
+@Service
+public class CartService {
+     @Autowired
+     CartRepository crepo;
+     
+     @Autowired
+     ProductRepository prepo;
+     
+     @Autowired
+     UsersRepository urepo;
+     
+     
+     public List<CartsDto> getCartsByUserId(int userId) {
+    	 
+         return crepo.findByUserId(userId).stream()
+                 .map(this::convertToDto)
+                 .collect(Collectors.toList());
+     }
+
+     private CartsDto convertToDto(Carts cart) {
+
+         ProductDto productDto = new ProductDto();
+         productDto.setP_id(cart.getProducts().getP_id());
+         productDto.setProduct_Name(cart.getProducts().getProduct_Name());
+         productDto.setPrice(cart.getProducts().getPrice());
+         productDto.setImageUrl("/api/products/image/" + cart.getProducts().getP_id());
+         
+
+         CartsDto cartsDto = new CartsDto();
+         cartsDto.setCartId(cart.getCart_id());
+         cartsDto.setStockQty(cart.getStock_Qty());
+      
+         cartsDto.setProductDto(productDto);
+
+         return cartsDto;
+     }
+     
+     public void addItemToCart(Integer userId, Integer productId, Integer quantity) {
+         // Validate input parameters (e.g., non-null, positive quantity, etc.)
+         // Additional business logic (e.g., check product availability, stock, etc.)
+    	   Users user = urepo.findById(userId).orElseThrow(() -> new IllegalArgumentException("User not found"));
+    	    Product product = prepo.findById(productId).orElseThrow(() -> new IllegalArgumentException("Product not found"));
+         // Assuming you have a Cart entity and a CartRepository
+    	    
+    	    Optional<Carts> existingCartItem = crepo.findByUserIdAndProductId(userId, productId);
+    	    
+    	    
+     if (existingCartItem.isEmpty()) {
+         Carts cartItem = new Carts();
+         cartItem.setUsers(user);
+         cartItem.setProducts(product);
+         cartItem.setStock_Qty(quantity);
+
+         crepo.save(cartItem);
+    	}else {
+    		//increment Qty
+    		    Carts eItem = existingCartItem.get();
+    	        eItem.setStock_Qty(eItem.getStock_Qty() + quantity);
+    	        crepo.save(eItem);
+    	}
+     }
+     
+     
+     public void removeItemFromCart(int userId, int productId) {
+         // Find the cart item associated with the user and product
+         Optional<Carts> existingCartItem = crepo.findByUserIdAndProductId(userId, productId);
+
+         if (existingCartItem.isPresent()) {
+             crepo.delete(existingCartItem.get());
+         } else {
+         }
+     }
+     public void clearCartByUserId(int userId) {
+         crepo.deleteByUsers_userid(userId);
+     }
+     
+     public void updateQuantity(Integer userId, Integer productId, int change) {
+         Users user = urepo.findById(userId)
+                 .orElseThrow(() -> new IllegalArgumentException("User not found"));
+         Product product = prepo.findById(productId)
+                 .orElseThrow(() -> new IllegalArgumentException("Product not found"));
+
+         Optional<Carts> existingCartItem = crepo.findByUserIdAndProductId(userId, productId);
+         if (existingCartItem.isEmpty()) {
+             throw new IllegalArgumentException("Cart item not found");
+         } else {
+             Carts cartItem = existingCartItem.get();
+             int newQuantity = cartItem.getStock_Qty() + change;
+             if (newQuantity <= 0) {
+                 crepo.delete(cartItem); // Remove the item if quantity is 0 or less
+             } else {
+                 cartItem.setStock_Qty(newQuantity);
+                 crepo.save(cartItem);
+             }
+         }
+     }
+     
+     
+}

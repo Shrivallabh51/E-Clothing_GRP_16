@@ -3,7 +3,7 @@ import Home from "./Components/Buyer/Home";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import About from "./Components/Buyer/About";
 import Products from "./Components/Buyer/Products";
-import Cart from "./Components/Buyer/Cart";
+import Cart from "./feature/Cart/Cart";
 import Login from "./feature/User/Login";
 import Registration from "./feature/User/Registration";
 import CheckOut from "./Components/Buyer/CheckOut";

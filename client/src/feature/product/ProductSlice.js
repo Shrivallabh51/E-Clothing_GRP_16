@@ -14,7 +14,7 @@ const initialState = {
     },
     price: 20,
     userdto: {
-      user_Id: "",
+      user_Id: Number(JSON.parse(localStorage.getItem("user")).userId),
     },
     description: "",
     stock_Qty: "",
@@ -108,6 +108,7 @@ export const ProductSlice = createSlice({
         state.ProductsToAdd[name] = value;
       }
     },
+
     updateFilters: (state, action) => {
       const { name, value } = action.payload;
 

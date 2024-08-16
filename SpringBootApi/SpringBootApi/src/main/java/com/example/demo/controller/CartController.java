@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -55,10 +56,17 @@ public class CartController {
        }
    }
    
+  
+   @DeleteMapping("/clearCart/{userId}")
+   public ResponseEntity<String> clearCart(@PathVariable int userId) {
+       cser.clearCartByUserId(userId);
+       return ResponseEntity.ok("Cart cleared successfully.");
+   }
+   
    @PostMapping("/increment")
    public ResponseEntity<String> incrementQuantity(
-           @RequestParam("userId") Integer userId,
-           @RequestParam("productId") Integer productId) {
+           @RequestParam("userId") int userId,
+           @RequestParam("productId") int productId) {
        try {
            cser.updateQuantity(userId, productId, 1);
            return ResponseEntity.ok("Quantity incremented successfully!");

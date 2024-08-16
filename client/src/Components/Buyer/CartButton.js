@@ -7,10 +7,13 @@ import { useDispatch } from "react-redux";
 
 export default function CartButton() {
   const { user, isLoggedIn } = useSelector((store) => store.User);
+  const { carts } = useSelector((store) => store.Cart);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  // console.log(carts);
+  const totalItems = carts.reduce((total, item) => total + item.stockQty, 0);
 
-  console.log("cartButton" + user.username);
+  // console.log("cartButton" + user.username);
   const handelLogout = () => {
     dispatch(logout());
     navigate("/");
@@ -21,7 +24,7 @@ export default function CartButton() {
         Cart
         <span className="cart-container">
           <FaShoppingCart />
-          <span className="cart-value">0</span>
+          <span className="cart-value">{Number(totalItems)}</span>
         </span>
       </Link>
       {isLoggedIn ? (

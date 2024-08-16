@@ -6,9 +6,16 @@ import { updateFilters } from "../../feature/product/ProductSlice";
 import { FilterProduct } from "../../feature/product/ProductSlice";
 
 const ProductSearchForm = () => {
-  const maxPrice = 1000;
   const dispatch = useDispatch();
-  const { categories, filters } = useSelector((store) => store.Product);
+  const { categories, filters, products } = useSelector(
+    (store) => store.Product
+  );
+  console.log(products);
+
+  const maxPrice = products.reduce(
+    (max, product) => (product.price > max ? product.price : max),
+    0
+  );
 
   const HandleSubmit = (e) => {
     e.preventDefault();
@@ -124,14 +131,14 @@ const ProductSearchForm = () => {
                 max={maxPrice}
                 style={{ color: "#ff66b2" }}
               />
-              <span className="text-white ms-2">${filters.price}.00</span>
+              <span className="text-white ms-2">{filters.price}.00</span>
             </div>
             <div
               className="text-white mt-1 d-flex justify-content-between"
               style={{ fontSize: "12px" }}
             >
               <span>0</span>
-              <span>Max : {maxPrice}.00</span>
+              <span>Max : {Number(maxPrice)}.00</span>
             </div>
           </div>
           <div className="col-md-6 col-lg-3">

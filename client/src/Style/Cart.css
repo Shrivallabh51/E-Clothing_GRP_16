@@ -1,0 +1,7 @@
+.transparent-btn {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: inherit;
+  padding: 0;
+}

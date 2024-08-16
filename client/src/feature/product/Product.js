@@ -4,11 +4,22 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import React from "react";
 import { Link } from "react-router-dom";
+import { addToCart } from "../Cart/CartSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function Product() {
   const filteredProducts = useSelector(
     (store) => store.Product.filteredProducts
   );
+  const navigate = useNavigate();
+
+  const handleCartChange = (product) => {
+    dispatch(addToCart({ p_id: product.p_id, quantity: 1 }));
+
+    navigate("/cart", { replace: true }); // Navigate to /cart
+    window.scrollTo(0, 0);
+  };
+
   const dispatch = useDispatch();
 
   // console.log(products);
@@ -50,9 +61,13 @@ export default function Product() {
                 <h5 className="card-title">{product.product_Name}</h5>
                 <p className="card-text text-muted">{product.description}</p>
                 <p className="card-text">${product.price.toFixed(2)}</p>
-                <Link href="#" className="btn btn-primary mt-auto">
+                <button
+                  href="#"
+                  className="btn btn-primary mt-auto"
+                  onClick={() => handleCartChange(product)}
+                >
                   Add to Cart
-                </Link>
+                </button>
               </div>
             </div>
           </div>

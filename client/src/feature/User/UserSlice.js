@@ -70,8 +70,8 @@ export const UserSlice = createSlice({
         //console.log(JSON.stringify(action.payload));
         state.isLoggedIn = true;
         state.user = action.payload;
-        console.log("user" + state.user.username);
-        console.log(state.user);
+        //console.log("user" + state.user.username);
+        //  console.log(state.user);
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.status = "failed";
