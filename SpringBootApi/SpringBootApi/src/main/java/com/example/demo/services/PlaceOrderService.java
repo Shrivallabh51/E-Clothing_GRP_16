@@ -1,0 +1,74 @@
+package com.example.demo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.repositories.AddressRepository;
+import com.example.demo.repositories.OrdersRepository;
+import com.example.demo.repositories.PaymentRepository;
+import com.example.demo.repositories.UsersRepository;
+
+
+import java.util.Random;
+import com.example.demo.entities.Address;
+import com.example.demo.entities.Orders;
+import com.example.demo.entities.Payment;
+import com.example.demo.entities.PlaceOrder;
+import com.example.demo.entities.Users;
+@Service
+public class PlaceOrderService {
+
+    @Autowired
+    private AddressRepository addressRepository;
+
+    @Autowired
+    private PaymentRepository pRepo;
+
+    @Autowired
+    private UsersRepository urepo;
+
+    @Autowired
+    private OrdersRepository ordersRepository;
+
+    public boolean placeOrder(int userId, int orderId, PlaceOrder placeOrder, String totalPrice) {
+        try {
+            // Generate a random 6-digit transaction ID
+            Random random = new Random();
+            int transactionId = 100000 + random.nextInt(900000);
+
+            // Initialize Address object
+            Address address = new Address();
+            address.setFull_name(placeOrder.getFull_name());
+            address.setStreet(placeOrder.getStreet());
+            address.setCity(placeOrder.getCity());
+            address.setState(placeOrder.getState());
+            address.setPincode(placeOrder.getPincode());
+            address.setMobile_number(placeOrder.getMobile_number());
+            Users user = urepo.findById(userId).orElse(null);
+            address.setUsers(user);
+
+            // Save Address to the database
+            addressRepository.save(address);
+
+            // Fetch Orders entity from the database
+            Orders orders = ordersRepository.findById(orderId).orElse(null);
+
+            // Initialize Payment object
+            Payment payment = new Payment();
+            payment.setTotal(totalPrice); // Set total amount from parameter
+            payment.setPayment_method_name(placeOrder.getPayment_method_name());
+            payment.setPayment_status("Pending");
+            payment.setTtransaction_id(transactionId);
+            payment.setUsers(user);
+            payment.setOrders(orders);
+
+            // Save Payment to the database
+            pRepo.save(payment);
+
+            return true;
+        } catch (Exception e) {
+            // Handle exceptions or logging if needed
+            return false;
+        }
+    }
+}

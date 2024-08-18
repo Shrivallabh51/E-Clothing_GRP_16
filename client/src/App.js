@@ -14,9 +14,14 @@ import SingleProduct from "./feature/product/SingleProduct";
 import BuyerLayout from "./Components/Buyer/BuyerLayout";
 import SellerLayout from "./Components/Seller/SellerLayout";
 import AdminLayout from "./Components/Admin/AdminLayout";
+import OrderDetails from "./Components/Seller/OrderDetails";
+import OrdersTable from "./Components/Admin/OrdersTable";
+import OrderHistory from "./Components/Buyer/OrderHistory";
 import Footer from "./Components/Buyer/Footer";
 import { AdminPrivateRoute } from "./Pages/PrivateRoute";
 import { SellerPrivateRoute } from "./Pages/PrivateRoute";
+import SellerTable from "./Components/Admin/SellerTable";
+
 function App() {
   return (
     <div className="App">
@@ -31,6 +36,7 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Registration />} />
             <Route path="checkout" element={<CheckOut />} />
+            <Route path="Orders" element={<OrderHistory />} />
             <Route path="products/:id" element={<SingleProduct />} />
           </Route>
 
@@ -45,6 +51,7 @@ function App() {
           >
             <Route index element={<SHomePage />} />
             <Route path="/seller/addproduct" element={<AddProduct />} />
+            <Route path="/seller/orderdetails" element={<OrderDetails />} />
           </Route>
 
           {/* admin route */}
@@ -57,9 +64,10 @@ function App() {
             }
           >
             <Route index element={<AHomePage />} />
-
-            {/* <Route path="/viewseller" element={}/> */}
+            <Route path="/admin/sellersReq" element={<SellerTable />} />
+            <Route path="/admin/Orders" element={<OrdersTable />} />
           </Route>
+          <Route path="*" element={<h1>Page not found</h1>} />
         </Routes>
         <Footer />
       </Router>

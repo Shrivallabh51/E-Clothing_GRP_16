@@ -74,15 +74,51 @@ namespace DotNetApi.Controllers
         }
 
 
-        [HttpPost]
-        public async Task<ActionResult<User>> Register(User user)
-        {
-            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
+        /*    [HttpPost]
+            public async Task<ActionResult<User>> Register(User user)
+            {
+                user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser", new { id = user.UserId }, user);
+                return CreatedAtAction("GetUser", new { id = user.UserId }, user);
+            }
+        */
+        [HttpPost]
+        public IActionResult Register(User user)
+        {
+            // Check if Username, Mobile, or Email already exists
+            var existingUser = _context.Users.FirstOrDefault(u => u.Username == user.Username || u.Mobile == user.Mobile || u.Email == user.Email);
+
+            if (existingUser != null)
+            {
+                if (existingUser.Username == user.Username)
+                {
+                    return BadRequest(new { message = "Username is already taken." });
+                }
+
+                if (existingUser.Mobile == user.Mobile)
+                {
+                    return BadRequest(new { message = "Mobile number is already registered." });
+                }
+
+                if (existingUser.Email == user.Email)
+                {
+                    return BadRequest(new { message = "Email is already registered." });
+                }
+            }
+
+            // Hash the password before saving
+            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+
+            // Add the new user to the database
+            _context.Users.Add(user);
+            _context.SaveChanges();
+
+            // Return a success response without including the userId
+            return Ok(new { message = "User registered successfully." });
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)

@@ -26,14 +26,43 @@ namespace DotNetApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetSeller()
         {
-            return await _context.Users.Where(user => user.Status == null).ToListAsync();
-
+            //return await _context.Users.Where(user => user.Status == null).ToListAsync();
+            var sellers = await _context.Users.Where(U => U.Status == null).ToListAsync();
+          
+  return Ok(sellers);
         }
-
 
         private bool UserExists(int id)
         {
             return _context.Users.Any(e => e.UserId == id);
         }
+
+        [HttpPut]
+        public IActionResult ActivateUser(int userId)
+        {
+            //var user = _context.Users.FirstOrDefault(u => u.UserId == userId);
+            var user = _context.Users.FirstOrDefault(e => e.UserId == userId);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            user.Status = "Active";
+            _context.SaveChangesAsync();
+            return Ok();
+        }
+
+        [HttpPut]
+        public IActionResult InactivateUser(int userId)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.UserId == userId);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            user.Status = "Inactive";
+            _context.SaveChangesAsync();
+            return Ok();
+        }
+
     }
 }

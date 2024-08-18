@@ -52,8 +52,8 @@ const SellerNavbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/update-product" className="nav-link">
-                Update Product
+              <Link to="/seller/orderdetails" className="nav-link">
+                Order_Details
               </Link>
             </li>
           </ul>

@@ -13,6 +13,18 @@ export const AdminPrivateRoute = ({ children }) => {
   }
 };
 
+export const BuyerPrivateRoute = ({ children }) => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  if (!user) {
+    return <Navigate to="/" />;
+  }
+  if (user.rId === 1 || user.rId === 3) {
+         
+  } else {
+    return <p>Access denied. Only admins can access this page.</p>;
+  }
+};
+
 export const SellerPrivateRoute = ({ children }) => {
   const user = JSON.parse(localStorage.getItem("user"));
   if (!user) {

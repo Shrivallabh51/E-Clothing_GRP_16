@@ -1,5 +1,6 @@
 package com.example.demo.entities;
 
+import java.util.List;
 import java.util.Set;
 
 
@@ -66,4 +67,7 @@ public class Product {
 	   // @JsonBackReference
 	    Set<Carts> carts;
 
+	 @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+	    @JsonIgnoreProperties("product")
+	    private List<OrderDetails> orderDetails;
 }

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\E-Clothing\\DotNetApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69B5CA01-9A9F-42FE-BB75-EF9C0246DC8B}|DotNetApi.csproj|d:\\e-clothing\\dotnetapi\\models\\eclothingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Dtos\\LoginDto.cs",
               "RelativeDocumentMoniker": "Dtos\\LoginDto.cs",
@@ -62,27 +62,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "D:\\E-Clothing\\DotNetApi\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBoAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T15:31:52.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
               "ToolTip": "D:\\E-Clothing\\DotNetApi\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAqwCsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T18:45:52.902Z"
+              "WhenOpened": "2024-08-05T18:45:52.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -98,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -106,8 +107,7 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:49:20.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T08:49:20.648Z"
             },
             {
               "$type": "Document",
@@ -123,13 +123,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\E-Clothing\\DotNetApi\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "D:\\E-Clothing\\DotNetApi\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAA3AAAA",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAiwHkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-04T09:49:59.055Z"
             },

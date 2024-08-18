@@ -1,0 +1,54 @@
+package com.example.demo.services;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entities.Address;
+import com.example.demo.entities.AddressDTO;
+import com.example.demo.repositories.AddressRepository;
+import com.example.demo.repositories.usersRepository;
+
+@Service
+public class AddressService {
+
+    @Autowired
+    private AddressRepository addressRepository;
+    
+    @Autowired
+    private usersRepository uRepo;
+
+    public List<AddressDTO> getAllAddresses() {
+        List<Address> addresses = addressRepository.findAll();
+        return addresses.stream().map(this::convertToDTO).collect(Collectors.toList());
+    }
+
+    // Method to convert Address entity to AddressDTO
+    private AddressDTO convertToDTO(Address address) {
+        AddressDTO dto = new AddressDTO();
+        dto.setAddressId(address.getAddress_id());
+        dto.setFullName(address.getFull_name());
+        dto.setStreet(address.getStreet());
+        dto.setCity(address.getCity());
+        dto.setState(address.getState());
+        dto.setPincode(address.getPincode());
+        dto.setMobileNumber(address.getMobile_number());
+        dto.setUserId(address.getUsers().getUser_Id());
+        return dto;
+    }
+    
+    public Address saveAddress(AddressDTO addressDTO, int userId) {
+        Address address = new Address();
+        address.setFull_name(addressDTO.getFullName());
+        address.setStreet(addressDTO.getStreet());
+        address.setCity(addressDTO.getCity());
+        address.setState(addressDTO.getState());
+        address.setPincode(addressDTO.getPincode());
+        address.setMobile_number(addressDTO.getMobileNumber());
+        // Assuming Users is a valid entity and you have a way to fetch it
+        address.setUsers(uRepo.findById(userId).orElse(null)); 
+        return addressRepository.save(address);
+    }
+}

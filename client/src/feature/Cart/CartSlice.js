@@ -6,6 +6,7 @@ const initialState = {
   status: "idle", // 'idle' | 'loading' | 'succeeded' | 'failed'
   user: JSON.parse(localStorage.getItem("user")),
   isQtyChange: false,
+  OrderTotal: 0,
 };
 
 export const getCart = createAsyncThunk("Cart/getCart", async (_, thunkAPI) => {
@@ -148,7 +149,14 @@ export const clearCart = createAsyncThunk(
 export const CartSlice = createSlice({
   name: "Cart",
   initialState,
-  reducers: {},
+  reducers: {
+    setOrderTotal: (state, action) => {
+      state.OrderTotal = action.payload;
+    },
+    ClearCarts: (state) => {
+      state.carts = [];
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getCart.pending, (state) => {})
@@ -184,5 +192,5 @@ export const CartSlice = createSlice({
   },
 });
 
-export const {} = CartSlice.actions;
+export const { setOrderTotal, ClearCarts } = CartSlice.actions;
 export default CartSlice.reducer;

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Button, Table, Row, Col } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../Style/Cart.css";
 import { getCart, clearCart, incProductQty, decProductQty } from "./CartSlice";
+import { setOrderTotal } from "./CartSlice";
 
 const Cart = () => {
   const { user } = useSelector((store) => store.User);
@@ -19,6 +20,9 @@ const Cart = () => {
       )
       .toFixed(2);
   };
+  useEffect(() => {
+    dispatch(setOrderTotal(calculateSubtotal()));
+  }, [dispatch, carts]);
 
   const handleDelete = async (p_id) => {
     setIsItemDeleted(false);

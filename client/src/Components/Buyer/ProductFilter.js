@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { getCategories } from "../../feature/product/ProductSlice";
 import { useDispatch } from "react-redux";
 import { updateFilters } from "../../feature/product/ProductSlice";
-import { FilterProduct } from "../../feature/product/ProductSlice";
+import { FilterProduct, ResetFilter } from "../../feature/product/ProductSlice";
 
 const ProductSearchForm = () => {
   const dispatch = useDispatch();
@@ -167,6 +167,7 @@ const ProductSearchForm = () => {
                 border: "none",
                 color: "#000",
               }}
+              onClick={() => dispatch(ResetFilter())}
             >
               RESET
             </button>

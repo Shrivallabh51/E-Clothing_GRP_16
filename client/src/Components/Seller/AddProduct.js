@@ -61,6 +61,14 @@ const AddProduct = () => {
       product.description &&
       file; // Ensure a file is selected
 
+    console.log(
+      product.product_Name &&
+        product.price &&
+        product.categorydto.cat_id &&
+        product.stock_Qty &&
+        product.description &&
+        file
+    );
     setIsFormValid(isValid);
   };
 
@@ -118,6 +126,7 @@ const AddProduct = () => {
                 name="categorydto.cat_id"
                 onChange={handleChange}
               >
+                <option>select...</option>
                 {/* Add more categories as needed */}
                 {categories.map((cat) => {
                   return (
@@ -144,16 +153,6 @@ const AddProduct = () => {
           </div>
           <div className="row">
             <div className="col-md-6 mb-3">
-              <label className="form-label">User ID</label>
-              <input
-                type="text"
-                className="form-control custom-input"
-                name="userdto.user_Id"
-                value={Number(user.userId)}
-                disabled={true}
-              />
-            </div>
-            <div className="col-md-6 mb-3">
               <label className="form-label">Stock Qty</label>
               <input
                 type="number"
@@ -164,8 +163,6 @@ const AddProduct = () => {
                 required
               />
             </div>
-          </div>
-          <div className="row">
             <div className="col-md-6 mb-3">
               <label className="form-label">Description</label>
               <input
@@ -177,6 +174,8 @@ const AddProduct = () => {
                 required
               />
             </div>
+          </div>
+          <div className="row">
             <div className="col-md-6 mb-3">
               <label className="form-label">
                 {productToEdit ? "Update Product" : "Add Product"}

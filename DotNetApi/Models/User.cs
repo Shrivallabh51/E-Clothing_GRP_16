@@ -23,7 +23,7 @@ namespace DotNetApi.Models
         public string Email { get; set; } = null!;
         public string Gender { get; set; } = null!;
         public int? RId { get; set; }
-        public string Status { get; set; } = null!;
+        public string? Status { get; set; } = null!;
 
         public virtual Role? RIdNavigation { get; set; }
         public virtual ICollection<Address> Addresses { get; set; }

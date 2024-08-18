@@ -58,5 +58,17 @@ public class Users {
 	    @JsonIgnoreProperties("category")
 	 //  @JsonBackReference
 	    Set<Carts> carts;
+	 
+	 @JsonIgnoreProperties("users")
+	    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL)
+	    private Set<Orders> orders;
+	 
+	 @JsonIgnoreProperties("users")
+	    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL)
+	    private Set<Address> addresses;
+		
+		 @JsonIgnoreProperties("users")
+		 @OneToMany(mappedBy = "users", cascade = CascadeType.ALL)
+		 private Set<Payment> payments;  // Added relationship with Payment
 
 }

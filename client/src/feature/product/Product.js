@@ -13,8 +13,8 @@ export default function Product() {
   );
   const navigate = useNavigate();
 
-  const handleCartChange = (product) => {
-    dispatch(addToCart({ p_id: product.p_id, quantity: 1 }));
+  const handleCartChange = async (product) => {
+    await dispatch(addToCart({ p_id: product.p_id, quantity: 1 }));
 
     navigate("/cart", { replace: true }); // Navigate to /cart
     window.scrollTo(0, 0);
@@ -27,8 +27,15 @@ export default function Product() {
     dispatch(getProducts());
   }, [dispatch]);
 
+  if (filteredProducts <= 0) {
+    return <h1>Products not found</h1>;
+  }
+
   return (
     <div className="my-5 product-margin">
+      <p style={{ textAlign: "left" }}>
+        {filteredProducts.length} product selected
+      </p>
       <div className="row">
         {filteredProducts.map((product) => (
           <div
@@ -60,7 +67,7 @@ export default function Product() {
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{product.product_Name}</h5>
                 <p className="card-text text-muted">{product.description}</p>
-                <p className="card-text">${product.price.toFixed(2)}</p>
+                <p className="card-text">{product.price.toFixed(2)}</p>
                 <button
                   href="#"
                   className="btn btn-primary mt-auto"

@@ -5,23 +5,24 @@ import "../../Style/SellerTable.css";
 
 const SellerTable = () => {
   const [sellers, setSellers] = useState([]);
+  const [isActivated, setIsActivated] = useState(false);
 
   useEffect(() => {
     axios
-      .get("https://localhost:7066/api/Admin/GetSeller")
+      .get("https://localhost:7268/api/Admin/GetSeller")
       .then((response) => {
         setSellers(response.data);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, [sellers]);
+  }, [isActivated]);
 
   const ActiveteSeller = async (userId) => {
     try {
       console.log(userId);
       const response = await fetch(
-        `https://localhost:7066/api/Admin/ActivateUser?userId=${userId}`,
+        `https://localhost:7268/api/Admin/ActivateUser?userId=${userId}`,
         {
           method: "PUT",
           headers: {
@@ -31,6 +32,7 @@ const SellerTable = () => {
       );
       if (response.ok) {
         console.log("User activated successfully");
+        setIsActivated(!isActivated);
       } else {
         console.error("Failed to activate user");
       }
@@ -43,7 +45,7 @@ const SellerTable = () => {
     try {
       console.log(userId);
       const response = await fetch(
-        `https://localhost:7066/api/Admin/InactivateUser?userId=${userId}`,
+        `https://localhost:7268/api/Admin/InactivateUser?userId=${userId}`,
         {
           method: "PUT",
           headers: {
@@ -53,6 +55,7 @@ const SellerTable = () => {
       );
       if (response.ok) {
         console.log("User inactivated successfully");
+        setIsActivated(!isActivated);
       } else {
         console.error("Failed to inactivate user");
       }

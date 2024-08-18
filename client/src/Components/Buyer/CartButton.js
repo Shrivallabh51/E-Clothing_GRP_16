@@ -1,9 +1,8 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../../feature/User/UserSlice";
-import { useDispatch } from "react-redux";
 
 export default function CartButton() {
   const { user, isLoggedIn } = useSelector((store) => store.User);
@@ -18,6 +17,7 @@ export default function CartButton() {
     dispatch(logout());
     navigate("/");
   };
+
   return (
     <div className="cart-btn-section">
       <Link to="/cart" className="cart-btn">

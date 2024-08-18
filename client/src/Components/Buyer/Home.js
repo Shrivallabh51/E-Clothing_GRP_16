@@ -1,8 +1,16 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import { useDispatch } from "react-redux";
+import { getCart } from "../../feature/Cart/CartSlice";
 
 const Home = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    // console.log("rerender");
+    dispatch(getCart());
+  }, [dispatch]);
+
   return (
     <section className="section-center">
       <article className="content">

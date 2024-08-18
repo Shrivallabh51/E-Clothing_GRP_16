@@ -135,7 +135,7 @@ nav {
       text-transform: capitalize;
       font-size: 1.1rem;
       letter-spacing: 0.2rem;
-      color: hsl(209, 39%, 29%);
+      color: white;
     }
     a:hover {
       border-bottom: 2px solid hsl(22, 35%, 62%);

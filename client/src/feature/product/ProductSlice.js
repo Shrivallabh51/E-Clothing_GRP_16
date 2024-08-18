@@ -14,7 +14,7 @@ const initialState = {
     },
     price: 20,
     userdto: {
-      user_Id: Number(JSON.parse(localStorage.getItem("user")).userId),
+      user_Id: "",
     },
     description: "",
     stock_Qty: "",
@@ -82,12 +82,16 @@ export const addProductTo = createAsyncThunk(
       if (!resp.ok) {
         throw new Error("Failed to add product");
       }
-
+    
       const data = await resp.json();
       console.log(data);
       console.log("Product added:");
       return data;
     } catch (error) {
+      if (error.message === "Failed to fetch") {
+        //toast.error("Server is busy, please try again later.");
+        console.log("server is busy");
+      }
       return thunkAPI.rejectWithValue("something went wrong");
     }
   }
@@ -100,6 +104,9 @@ export const ProductSlice = createSlice({
     updateProductField: (state, action) => {
       const { name, value } = action.payload;
 
+      const user = JSON.parse(localStorage.getItem("user"));
+      state.ProductsToAdd.userdto.user_Id = user.userId;
+      console.log(user.userId);
       // Handle nested updates
       if (name.startsWith("categorydto.") || name.startsWith("userdto.")) {
         const [parent, key] = name.split(".");
@@ -171,6 +178,15 @@ export const ProductSlice = createSlice({
       // Update the filteredProducts in state
       state.filteredProducts = filtered;
     },
+    ResetFilter: (state, action) => {
+      state.filters = {
+        text: "",
+        sort: "a-z",
+        catId: 0,
+        price: 0,
+      };
+      state.filteredProducts = state.products;
+    },
   },
 
   extraReducers: (builder) => {
@@ -213,6 +229,11 @@ export const ProductSlice = createSlice({
   },
 });
 
-export const { updateProductField, setFile, updateFilters, FilterProduct } =
-  ProductSlice.actions;
+export const {
+  updateProductField,
+  setFile,
+  updateFilters,
+  FilterProduct,
+  ResetFilter,
+} = ProductSlice.actions;
 export default ProductSlice.reducer;

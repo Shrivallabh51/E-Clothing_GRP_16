@@ -32,7 +32,7 @@ export default function Navbar() {
           )}
           {isLoggedIn && (
             <li>
-              <Link to="/Order">Orders</Link>
+              <Link to="/Orders">Orders</Link>
             </li>
           )}
         </ul>
