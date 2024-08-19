@@ -47,9 +47,6 @@ const AdminNavbar = () => {
         </button>
         <ul className="dropdown-menu" aria-labelledby="userDropdown">
           <li>
-            <button className="dropdown-item">Profile</button>
-          </li>
-          <li>
             <button className="dropdown-item" onClick={handelLogout}>
               Logout
             </button>

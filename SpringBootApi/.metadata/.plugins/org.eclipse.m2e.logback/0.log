@@ -3010,3 +3010,13 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.to
 2024-08-18 22:50:19,452 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-08-18 22:50:19,642 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-08-18 22:50:19,654 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2024-08-19 08:48:19,335 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-19 09:11:04,927 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-19 10:19:48,439 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-19 10:54:43,585 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.6; built: 2024-01-30T02:43:24.387Z; git: 78ab6e6ba163f89cdd97f2ae0283fbb5e371cfaf; jvm 17.0.10+7
+2024-08-19 10:54:43,679 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@59ff4b4{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@13f6362{STARTED}}
+2024-08-19 10:54:43,680 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2024-08-19 10:54:43,727 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7997331a{HTTP/1.1, (http/1.1)}{127.0.0.1:52975}
+2024-08-19 10:54:43,752 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@af6f911{STARTING}[12.0.6,sto=0] @2117368ms
+2024-08-19 10:59:01,721 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@af6f911{STOPPING}[12.0.6,sto=0]
+2024-08-19 10:59:01,724 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7997331a{HTTP/1.1, (http/1.1)}{127.0.0.1:0}

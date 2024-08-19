@@ -53,6 +53,7 @@ const SellerTable = () => {
           },
         }
       );
+      setIsActivated(!isActivated);
       if (response.ok) {
         console.log("User inactivated successfully");
         setIsActivated(!isActivated);

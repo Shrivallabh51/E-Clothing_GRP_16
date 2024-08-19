@@ -7,18 +7,21 @@ import Swal from "sweetalert2";
 const OrderDetails = () => {
   const [orderDetails, setOrderDetails] = useState([]);
   const [statuses, setStatuses] = useState([]);
+  const [isStatusUpdate, setIsStatusUpdate] = useState(false);
 
-  const user = localStorage.getItem("user");
+  const user = JSON.parse(localStorage.getItem("user"));
   useEffect(() => {
     // Fetch order details
     axios
-      .get(`http://localhost:8090/seller/${Number(user.userId)}`)
+      .get(`http://localhost:8090/seller/${user.userId}`)
       .then((response) => {
         setOrderDetails(response.data);
       })
       .catch((error) => {
         console.log(error);
       });
+
+    console.log(orderDetails);
 
     // Fetch statuses
     axios
@@ -29,7 +32,7 @@ const OrderDetails = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, [orderDetails]);
+  }, [isStatusUpdate]);
 
   // Method to update the order status
   const updateOrderStatus = async (orderId, status) => {
@@ -43,6 +46,7 @@ const OrderDetails = () => {
           title: "Success",
           text: "Status updated successfully",
         });
+        setIsStatusUpdate(!isStatusUpdate);
       } else {
         Swal.fire({
           icon: "error",

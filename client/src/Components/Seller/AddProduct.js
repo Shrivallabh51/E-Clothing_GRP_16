@@ -53,22 +53,17 @@ const AddProduct = () => {
   };
 
   const validateForm = (product) => {
+    // Ensure price is greater than 0 and stock quantity is 0 or more
     const isValid =
-      product.product_Name &&
-      product.price &&
+      product.product_Name.trim() !== "" &&
+      product.price !== undefined &&
+      product.price > 0 &&
       product.categorydto.cat_id &&
-      product.stock_Qty &&
-      product.description &&
+      product.stock_Qty !== undefined &&
+      product.stock_Qty > 0 &&
+      product.description.trim() !== "" &&
       file; // Ensure a file is selected
 
-    console.log(
-      product.product_Name &&
-        product.price &&
-        product.categorydto.cat_id &&
-        product.stock_Qty &&
-        product.description &&
-        file
-    );
     setIsFormValid(isValid);
   };
 
@@ -84,6 +79,7 @@ const AddProduct = () => {
         toast.success("product added successfully");
       }
     } catch (error) {
+      toast.error("server unavailable");
       console.error("error occurred during adding product", error);
     }
   };

@@ -42,11 +42,6 @@ const SellerNavbar = () => {
         >
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link to="/orders" className="nav-link active">
-                Orders
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link to="/seller/addproduct" className="nav-link">
                 Add Product
               </Link>
@@ -69,9 +64,6 @@ const SellerNavbar = () => {
             {user.username}
           </button>
           <ul className="dropdown-menu" aria-labelledby="userDropdown">
-            <li>
-              <button className="dropdown-item">Profile</button>
-            </li>
             <li>
               <button className="dropdown-item" onClick={handelLogout}>
                 Logout
