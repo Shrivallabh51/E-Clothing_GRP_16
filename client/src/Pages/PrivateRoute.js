@@ -6,7 +6,7 @@ export const AdminPrivateRoute = ({ children }) => {
   if (!user) {
     return <Navigate to="/" />;
   }
-  if (user.rId === 1) {
+  if (user.rId === "1") {
     return children;
   } else {
     return <p>Access denied. Only admins can access this page.</p>;
@@ -18,8 +18,7 @@ export const BuyerPrivateRoute = ({ children }) => {
   if (!user) {
     return <Navigate to="/" />;
   }
-  if (user.rId === 1 || user.rId === 3) {
-         
+  if (user.rId === "1" || user.rId === "3") {
   } else {
     return <p>Access denied. Only admins can access this page.</p>;
   }
@@ -30,7 +29,7 @@ export const SellerPrivateRoute = ({ children }) => {
   if (!user) {
     return <Navigate to="/" />;
   }
-  if (user.rId === 3) {
+  if (user.rId === "3") {
     return children;
   } else {
     return <p>Access denied. Only sellers can access this page.</p>;

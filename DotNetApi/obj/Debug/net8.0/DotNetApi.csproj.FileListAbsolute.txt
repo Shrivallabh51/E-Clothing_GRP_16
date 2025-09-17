@@ -232,3 +232,11 @@ D:\E-Clothing\DotNetApi\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.
 D:\E-Clothing\DotNetApi\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\E-Clothing\DotNetApi\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\E-Clothing\DotNetApi\obj\Debug\net8.0\DotNetApi.sourcelink.json
+D:\E-Clothing\DotNetApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\E-Clothing\DotNetApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\E-Clothing\DotNetApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\E-Clothing\DotNetApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\E-Clothing\DotNetApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\E-Clothing\DotNetApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\E-Clothing\DotNetApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\E-Clothing\DotNetApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

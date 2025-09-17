@@ -17,13 +17,11 @@ import com.example.demo.services.CategoryService;
 public class CategoryController {
 	 @Autowired
      CategoryService cser;
-	
-	
+
 	@PostMapping("/savecat")
 	public Category savecat(@RequestBody  Category cat) {
 		return cser.saveC(cat);
 	}
-	
 	@GetMapping("/getcat")
 	public List<Category> getCat(){
 		return cser.getAllCategory();

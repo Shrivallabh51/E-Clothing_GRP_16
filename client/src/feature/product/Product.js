@@ -6,23 +6,32 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { addToCart } from "../Cart/CartSlice";
 import { useNavigate } from "react-router-dom";
+import { useCallback } from "react";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 export default function Product() {
   const filteredProducts = useSelector(
     (store) => store.Product.filteredProducts
   );
   const navigate = useNavigate();
-
-  const handleCartChange = async (product) => {
-    await dispatch(addToCart({ p_id: product.p_id, quantity: 1 }));
-
-    navigate("/cart", { replace: true }); // Navigate to /cart
-    window.scrollTo(0, 0);
-  };
-
   const dispatch = useDispatch();
 
-  // console.log(products);
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  const handleCartChange = useCallback(
+    async (product) => {
+      if (user?.username) {
+        await dispatch(addToCart({ p_id: product.p_id, quantity: 1 }));
+        navigate("/cart", { replace: true }); // Navigate to /cart
+        window.scrollTo(0, 0);
+      } else {
+        toast.warning("Only Login Users can add Items in Cart");
+      }
+    },
+    [user?.username, dispatch, navigate]
+  );
+
   useEffect(() => {
     dispatch(getProducts());
   }, [dispatch]);
@@ -68,18 +77,21 @@ export default function Product() {
                 <h5 className="card-title">{product.product_Name}</h5>
                 <p className="card-text text-muted">{product.description}</p>
                 <p className="card-text">{product.price.toFixed(2)}</p>
-                <button
-                  href="#"
-                  className="btn btn-primary mt-auto"
-                  onClick={() => handleCartChange(product)}
-                >
-                  Add to Cart
-                </button>
+                {user?.rId !== 1 && (
+                  <button
+                    href="#"
+                    className="btn btn-primary mt-auto"
+                    onClick={() => handleCartChange(product)}
+                  >
+                    Add to Cart
+                  </button>
+                )}
               </div>
             </div>
           </div>
         ))}
       </div>
+      <ToastContainer />
     </div>
   );
 }

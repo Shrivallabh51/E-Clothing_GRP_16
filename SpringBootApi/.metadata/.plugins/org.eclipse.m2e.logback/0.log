@@ -3020,3 +3020,1017 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.to
 2024-08-19 10:54:43,752 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@af6f911{STARTING}[12.0.6,sto=0] @2117368ms
 2024-08-19 10:59:01,721 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@af6f911{STOPPING}[12.0.6,sto=0]
 2024-08-19 10:59:01,724 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7997331a{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2024-08-19 11:21:43,547 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-24 12:53:37,707 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-25 20:59:46,748 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-25 21:02:26,164 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration AvgSal references non-existing project JDBC.
+org.eclipse.core.runtime.CoreException: Launch configuration AvgSal references non-existing project JDBC.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,175 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration DeleteOperation references non-existing project SimpleHibernate.
+org.eclipse.core.runtime.CoreException: Launch configuration DeleteOperation references non-existing project SimpleHibernate.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,177 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration DiApp references non-existing project SpringDI.
+org.eclipse.core.runtime.CoreException: Launch configuration DiApp references non-existing project SpringDI.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,181 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Emp references non-existing project SimpleHibernate.
+org.eclipse.core.runtime.CoreException: Launch configuration Emp references non-existing project SimpleHibernate.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,183 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration GetEmp references non-existing project JDBC.
+org.eclipse.core.runtime.CoreException: Launch configuration GetEmp references non-existing project JDBC.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,186 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration HQLDemo references non-existing project SimpleHibernate.
+org.eclipse.core.runtime.CoreException: Launch configuration HQLDemo references non-existing project SimpleHibernate.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,188 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration MysqlConnect references non-existing project ConsoleMaven.
+org.eclipse.core.runtime.CoreException: Launch configuration MysqlConnect references non-existing project ConsoleMaven.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,191 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Procedure references non-existing project JDBC.
+org.eclipse.core.runtime.CoreException: Launch configuration Procedure references non-existing project JDBC.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,193 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SaveOperation references non-existing project SimpleHibernate.
+org.eclipse.core.runtime.CoreException: Launch configuration SaveOperation references non-existing project SimpleHibernate.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,195 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SelectEmp references non-existing project JDBC.
+org.eclipse.core.runtime.CoreException: Launch configuration SelectEmp references non-existing project JDBC.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,197 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringBootConsoleApplication references non-existing project SpringBootConsole.
+org.eclipse.core.runtime.CoreException: Launch configuration SpringBootConsoleApplication references non-existing project SpringBootConsole.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,200 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringBootMvcApplication references non-existing project SpringBootMvc.
+org.eclipse.core.runtime.CoreException: Launch configuration SpringBootMvcApplication references non-existing project SpringBootMvc.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,323 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SqlConnect references non-existing project Console_Maven.
+org.eclipse.core.runtime.CoreException: Launch configuration SqlConnect references non-existing project Console_Maven.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,326 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration UpdateOperation references non-existing project SimpleHibernate.
+org.eclipse.core.runtime.CoreException: Launch configuration UpdateOperation references non-existing project SimpleHibernate.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,328 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration UpdateSal references non-existing project JDBC.
+org.eclipse.core.runtime.CoreException: Launch configuration UpdateSal references non-existing project JDBC.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:26,330 [Worker-13: D:\PG-DAC\Advanced Java] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration UpdateSalary references non-existing project JDBC.
+org.eclipse.core.runtime.CoreException: Launch configuration UpdateSalary references non-existing project JDBC.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:02:28,501 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-25 21:02:28,525 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-25 21:02:28,532 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\PG-DAC\Advanced Java\SpringBootRestApi\src\test\resources
+2024-08-25 21:07:52,623 [Worker-17: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringBootRestApiApplication references non-existing project SpringBootRestApi.
+org.eclipse.core.runtime.CoreException: Launch configuration SpringBootRestApiApplication references non-existing project SpringBootRestApi.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:50)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:409)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:135)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:888)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1038)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:07:52,625 [Worker-17: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringBootRestApiApplication references non-existing project SpringBootRestApi.
+org.eclipse.core.runtime.CoreException: Launch configuration SpringBootRestApiApplication references non-existing project SpringBootRestApi.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:50)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:135)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:888)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1038)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:07:52,628 [Worker-17: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringBootRestApiApplication references non-existing project SpringBootRestApi.
+org.eclipse.core.runtime.CoreException: Launch configuration SpringBootRestApiApplication references non-existing project SpringBootRestApi.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1862)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1739)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:50)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2010)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:135)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:888)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1038)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-08-25 21:38:36,685 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-28 12:20:49,021 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-28 12:20:49,560 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2024-08-28 12:20:56,396 [Worker-1: Launching SpringBootApiApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-28 12:20:56,426 [Worker-1: Launching SpringBootApiApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-28 12:20:56,435 [Worker-1: Launching SpringBootApiApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2024-08-28 20:18:00,347 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-28 20:33:10,363 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-28 20:35:14,657 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-28 20:39:20,884 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-28 20:46:08,470 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.4/maven-archetype-quickstart-1.4.pom
+2024-08-28 20:46:08,479 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.4/maven-archetype-quickstart-1.4.pom
+2024-08-28 20:46:08,625 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.4/maven-archetype-quickstart-1.4.jar
+2024-08-28 20:46:08,642 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.4/maven-archetype-quickstart-1.4.jar
+2024-08-28 20:48:10,316 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.pom
+2024-08-28 20:48:10,321 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.pom
+2024-08-28 20:48:10,362 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-bundles/4/maven-archetype-bundles-4.pom
+2024-08-28 20:48:10,369 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-bundles/4/maven-archetype-bundles-4.pom
+2024-08-28 20:48:10,441 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/archetype/maven-archetype/2.0-alpha-5/maven-archetype-2.0-alpha-5.pom
+2024-08-28 20:48:10,456 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/archetype/maven-archetype/2.0-alpha-5/maven-archetype-2.0-alpha-5.pom
+2024-08-28 20:48:10,525 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
+2024-08-28 20:48:10,556 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
+2024-08-28 20:48:10,604 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
+2024-08-28 20:48:10,625 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
+2024-08-28 20:49:53,502 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234 [638])
+2024-08-28 20:49:53,506 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234
+2024-08-28 20:49:53,506 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\aopalliance-1.0.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\guice-5.1.0.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpclient-4.5.14.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpcore-4.4.16.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jansi-2.4.0.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jcl-over-slf4j-1.7.36.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-artifact-3.9.6.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-builder-support-3.9.6.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-compat-3.9.6.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-core-3.9.6.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-embedder-3.9.6.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-3.9.6.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-builder-3.9.6.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-plugin-api-3.9.6.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-repository-metadata-3.9.6.jar
+2024-08-28 20:49:53,507 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-api-1.9.18.jar
+2024-08-28 20:49:53,508 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-connector-basic-1.9.18.jar
+2024-08-28 20:49:53,508 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-impl-1.9.18.jar
+2024-08-28 20:49:53,508 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-named-locks-1.9.18.jar
+2024-08-28 20:49:53,508 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-provider-3.9.6.jar
+2024-08-28 20:49:53,509 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-spi-1.9.18.jar
+2024-08-28 20:49:53,509 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-file-1.9.18.jar
+2024-08-28 20:49:53,509 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-http-1.9.18.jar
+2024-08-28 20:49:53,509 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-wagon-1.9.18.jar
+2024-08-28 20:49:53,509 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-util-1.9.18.jar
+2024-08-28 20:49:53,509 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-3.9.6.jar
+2024-08-28 20:49:53,510 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-builder-3.9.6.jar
+2024-08-28 20:49:53,510 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-shared-utils-3.3.4.jar
+2024-08-28 20:49:53,510 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2024-08-28 20:49:53,510 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2024-08-28 20:49:53,510 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-build-api-0.0.7.jar
+2024-08-28 20:49:53,510 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-cipher-2.0.jar
+2024-08-28 20:49:53,510 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-classworlds-2.7.0.jar
+2024-08-28 20:49:53,511 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-component-annotations-2.1.0.jar
+2024-08-28 20:49:53,511 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-interpolation-1.26.jar
+2024-08-28 20:49:53,511 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-sec-dispatcher-2.0.jar
+2024-08-28 20:49:53,511 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-utils-3.5.1.jar
+2024-08-28 20:49:53,511 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-file-3.5.3.jar
+2024-08-28 20:49:53,511 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-3.5.3.jar
+2024-08-28 20:49:53,511 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-shared-3.5.3.jar
+2024-08-28 20:49:53,511 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-provider-api-3.5.3.jar
+2024-08-28 20:49:53,513 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.0.0.jre [14])
+2024-08-28 20:49:53,513 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\com.google.guava_33.0.0.jre.jar
+2024-08-28 20:49:53,513 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.12 [1001])
+2024-08-28 20:49:53,513 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\slf4j.api_2.0.12.jar
+2024-08-28 20:49:53,514 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [32])
+2024-08-28 20:49:53,514 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2024-08-28 20:49:53,514 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [27])
+2024-08-28 20:49:53,515 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\jakarta.annotation-api_1.3.5.jar
+2024-08-28 20:49:53,515 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [75])
+2024-08-28 20:49:53,516 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.apache.commons.cli_1.6.0.jar
+2024-08-28 20:49:53,516 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2024-08-28 20:49:53,517 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2024-08-28 20:49:53,518 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.14.0 [86])
+2024-08-28 20:49:53,518 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.apache.commons.lang3_3.14.0.jar
+2024-08-28 20:49:53,518 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [15])
+2024-08-28 20:49:53,518 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\com.google.guava.failureaccess_1.0.2.jar
+2024-08-28 20:49:53,525 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\asus\AppData\Local\Temp\m2e-archetypeGenerator15400069382639842428":
+2024-08-28 20:49:53,534 [Worker-11: Launching mavenrun-601b4fea-bd7a-4963-8cb3-a64f09bf61f3] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.1 -DgroupId=com.bajajhealth -DartifactId=problem1 -Dversion=0.0.1-SNAPSHOT -Dpackage=com.bajajhealth.challenge -DoutputDirectory=D:\E-Clothing\SpringBootApi -Dstyle.color=always -U archetype:generate
+2024-08-28 21:02:47,555 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/haoxuer/maven/archetype/maven-archetype-quickstart/1.01/maven-archetype-quickstart-1.01.pom
+2024-08-28 21:02:47,559 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/haoxuer/maven/archetype/maven-archetype-quickstart/1.01/maven-archetype-quickstart-1.01.pom
+2024-08-28 21:02:47,913 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/haoxuer/maven/archetype/maven-archetype-bundles/1.01/maven-archetype-bundles-1.01.pom
+2024-08-28 21:03:05,542 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234 [638])
+2024-08-28 21:03:05,543 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234
+2024-08-28 21:03:05,543 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\aopalliance-1.0.jar
+2024-08-28 21:03:05,543 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\guice-5.1.0.jar
+2024-08-28 21:03:05,543 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpclient-4.5.14.jar
+2024-08-28 21:03:05,543 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpcore-4.4.16.jar
+2024-08-28 21:03:05,543 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jansi-2.4.0.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jcl-over-slf4j-1.7.36.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-artifact-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-builder-support-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-compat-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-core-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-embedder-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-builder-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-plugin-api-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-repository-metadata-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-api-1.9.18.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-connector-basic-1.9.18.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-impl-1.9.18.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-named-locks-1.9.18.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-provider-3.9.6.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-spi-1.9.18.jar
+2024-08-28 21:03:05,544 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-file-1.9.18.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-http-1.9.18.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-wagon-1.9.18.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-util-1.9.18.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-3.9.6.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-builder-3.9.6.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-shared-utils-3.3.4.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-build-api-0.0.7.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-cipher-2.0.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-classworlds-2.7.0.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-component-annotations-2.1.0.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-interpolation-1.26.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-sec-dispatcher-2.0.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-utils-3.5.1.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-file-3.5.3.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-3.5.3.jar
+2024-08-28 21:03:05,545 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-shared-3.5.3.jar
+2024-08-28 21:03:05,546 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-provider-api-3.5.3.jar
+2024-08-28 21:03:05,546 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.0.0.jre [14])
+2024-08-28 21:03:05,546 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\com.google.guava_33.0.0.jre.jar
+2024-08-28 21:03:05,546 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.12 [1001])
+2024-08-28 21:03:05,546 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\slf4j.api_2.0.12.jar
+2024-08-28 21:03:05,546 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [32])
+2024-08-28 21:03:05,546 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2024-08-28 21:03:05,547 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [27])
+2024-08-28 21:03:05,547 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\jakarta.annotation-api_1.3.5.jar
+2024-08-28 21:03:05,547 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [75])
+2024-08-28 21:03:05,547 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.apache.commons.cli_1.6.0.jar
+2024-08-28 21:03:05,547 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2024-08-28 21:03:05,547 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2024-08-28 21:03:05,547 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.14.0 [86])
+2024-08-28 21:03:05,547 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.apache.commons.lang3_3.14.0.jar
+2024-08-28 21:03:05,547 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [15])
+2024-08-28 21:03:05,548 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\com.google.guava.failureaccess_1.0.2.jar
+2024-08-28 21:03:05,548 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\asus\AppData\Local\Temp\m2e-archetypeGenerator6891087762929263832":
+2024-08-28 21:03:05,549 [Worker-26: Launching mavenrun-463d0499-f4ee-4eee-bb8a-12ba29d000fc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -DarchetypeGroupId=com.haoxuer.maven.archetype -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.01 -DgroupId=com.bajajhealth -DartifactId=MavenProject -Dversion=0.0.1-SNAPSHOT -Dpackage=com.bajajhealth.MavenProject -DoutputDirectory=D:\E-Clothing\SpringBootApi -Dstyle.color=always -U archetype:generate
+2024-08-28 21:06:16,655 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234 [638])
+2024-08-28 21:06:16,655 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234
+2024-08-28 21:06:16,655 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\aopalliance-1.0.jar
+2024-08-28 21:06:16,655 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\guice-5.1.0.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpclient-4.5.14.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpcore-4.4.16.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jansi-2.4.0.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jcl-over-slf4j-1.7.36.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-artifact-3.9.6.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-builder-support-3.9.6.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-compat-3.9.6.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-core-3.9.6.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-embedder-3.9.6.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-3.9.6.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-builder-3.9.6.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-plugin-api-3.9.6.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-repository-metadata-3.9.6.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-api-1.9.18.jar
+2024-08-28 21:06:16,656 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-connector-basic-1.9.18.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-impl-1.9.18.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-named-locks-1.9.18.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-provider-3.9.6.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-spi-1.9.18.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-file-1.9.18.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-http-1.9.18.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-wagon-1.9.18.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-util-1.9.18.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-3.9.6.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-builder-3.9.6.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-shared-utils-3.3.4.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-build-api-0.0.7.jar
+2024-08-28 21:06:16,657 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-cipher-2.0.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-classworlds-2.7.0.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-component-annotations-2.1.0.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-interpolation-1.26.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-sec-dispatcher-2.0.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-utils-3.5.1.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-file-3.5.3.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-3.5.3.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-shared-3.5.3.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-provider-api-3.5.3.jar
+2024-08-28 21:06:16,658 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.0.0.jre [14])
+2024-08-28 21:06:16,659 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\com.google.guava_33.0.0.jre.jar
+2024-08-28 21:06:16,659 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.12 [1001])
+2024-08-28 21:06:16,659 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\slf4j.api_2.0.12.jar
+2024-08-28 21:06:16,659 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [32])
+2024-08-28 21:06:16,659 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2024-08-28 21:06:16,659 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [27])
+2024-08-28 21:06:16,659 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\jakarta.annotation-api_1.3.5.jar
+2024-08-28 21:06:16,659 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [75])
+2024-08-28 21:06:16,660 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.apache.commons.cli_1.6.0.jar
+2024-08-28 21:06:16,660 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2024-08-28 21:06:16,660 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2024-08-28 21:06:16,660 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.14.0 [86])
+2024-08-28 21:06:16,660 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\org.apache.commons.lang3_3.14.0.jar
+2024-08-28 21:06:16,660 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [15])
+2024-08-28 21:06:16,661 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\Setup\eclipse\plugins\com.google.guava.failureaccess_1.0.2.jar
+2024-08-28 21:06:16,662 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\asus\AppData\Local\Temp\m2e-archetypeGenerator9136932258518028223":
+2024-08-28 21:06:16,662 [Worker-26: Launching mavenrun-edb85de6-8f3b-4d9a-981f-adecb2042b18] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.1 -DgroupId=com.bajajhealth -DartifactId=DestinationHashGenerator -Dversion=0.0.1-SNAPSHOT -Dpackage=com.bajajhealth.DestinationHashGenerator -DoutputDirectory=D:\E-Clothing\SpringBootApi -Dstyle.color=always -U archetype:generate
+2024-08-28 21:06:29,512 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' D:\E-Clothing\SpringBootApi\DestinationHashGenerator\pom.xml
+2024-08-28 21:06:29,907 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bajajhealth:DestinationHashGenerator:0.0.1-SNAPSHOT @ D:\E-Clothing\SpringBootApi\DestinationHashGenerator\pom.xml.
+2024-08-28 21:06:30,048 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
+2024-08-28 21:06:30,051 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
+2024-08-28 21:06:30,092 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+2024-08-28 21:06:30,147 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+2024-08-28 21:06:30,587 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DestinationHashGenerator/src/main/java
+2024-08-28 21:06:30,588 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DestinationHashGenerator/src/main/resources
+2024-08-28 21:06:30,591 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DestinationHashGenerator/src/test/java
+2024-08-28 21:06:30,591 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DestinationHashGenerator/src/test/resources
+2024-08-28 21:06:30,633 [Worker-11: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2024-08-28 21:06:31,017 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:06:31,022 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:06:31,677 [Worker-30: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1-sources.jar
+2024-08-28 21:06:31,723 [Worker-30: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1-sources.jar
+2024-08-28 21:06:31,725 [Worker-30: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for junit:junit:3.8.1
+2024-08-28 21:07:48,589 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bajajhealth:DestinationHashGenerator:0.0.1-SNAPSHOT @ D:\E-Clothing\SpringBootApi\DestinationHashGenerator\pom.xml.
+2024-08-28 21:07:48,693 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.pom
+2024-08-28 21:07:48,698 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.pom
+2024-08-28 21:07:48,735 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.13.3/jackson-base-2.13.3.pom
+2024-08-28 21:07:48,743 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.13.3/jackson-base-2.13.3.pom
+2024-08-28 21:07:48,775 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.13.3/jackson-bom-2.13.3.pom
+2024-08-28 21:07:48,792 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.13.3/jackson-bom-2.13.3.pom
+2024-08-28 21:07:48,830 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.13/jackson-parent-2.13.pom
+2024-08-28 21:07:48,841 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.13/jackson-parent-2.13.pom
+2024-08-28 21:07:48,873 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/43/oss-parent-43.pom
+2024-08-28 21:07:48,883 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/43/oss-parent-43.pom
+2024-08-28 21:07:48,924 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.pom
+2024-08-28 21:07:48,928 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.pom
+2024-08-28 21:07:48,959 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.pom
+2024-08-28 21:07:48,963 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.pom
+2024-08-28 21:07:48,997 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar
+2024-08-28 21:07:49,813 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar
+2024-08-28 21:07:49,841 [BasicRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar
+2024-08-28 21:07:49,859 [BasicRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar
+2024-08-28 21:07:49,928 [BasicRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar
+2024-08-28 21:07:50,150 [BasicRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar
+2024-08-28 21:07:51,436 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:SpringBootApi:0.0.1-SNAPSHOT @ D:\E-Clothing\SpringBootApi\SpringBootApi\pom.xml.
+2024-08-28 21:07:51,842 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:07:51,845 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:07:52,211 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:07:52,212 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:07:52,676 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3-sources.jar
+2024-08-28 21:07:53,034 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3-sources.jar
+2024-08-28 21:07:53,039 [Worker-28: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.fasterxml.jackson.core:jackson-databind:2.13.3
+2024-08-28 21:07:53,205 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3-sources.jar
+2024-08-28 21:07:53,256 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3-sources.jar
+2024-08-28 21:07:53,261 [Worker-28: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.fasterxml.jackson.core:jackson-annotations:2.13.3
+2024-08-28 21:07:53,372 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3-sources.jar
+2024-08-28 21:07:53,516 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3-sources.jar
+2024-08-28 21:07:53,520 [Worker-28: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.fasterxml.jackson.core:jackson-core:2.13.3
+2024-08-28 21:08:12,911 [Worker-23: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bajajhealth:DestinationHashGenerator:0.0.1-SNAPSHOT @ D:\E-Clothing\SpringBootApi\DestinationHashGenerator\pom.xml.
+2024-08-28 21:08:13,013 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:08:13,016 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:08:17,076 [Worker-11: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bajajhealth:DestinationHashGenerator:0.0.1-SNAPSHOT @ D:\E-Clothing\SpringBootApi\DestinationHashGenerator\pom.xml.
+2024-08-28 21:08:17,168 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+2024-08-28 21:08:17,172 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+2024-08-28 21:08:17,211 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom
+2024-08-28 21:08:17,216 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom
+2024-08-28 21:08:17,248 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+2024-08-28 21:08:17,251 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+2024-08-28 21:08:17,285 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+2024-08-28 21:08:17,292 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+2024-08-28 21:08:17,354 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar
+2024-08-28 21:08:17,362 [Worker-11: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar
+2024-08-28 21:08:17,457 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:08:17,460 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:08:18,518 [Worker-30: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar
+2024-08-28 21:08:18,524 [Worker-30: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar
+2024-08-28 21:08:18,527 [Worker-30: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.googlecode.json-simple:json-simple:1.1.1
+2024-08-28 21:08:18,674 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:08:18,675 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:10:15,938 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:10:15,940 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:10:23,331 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:10:23,333 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:10:24,698 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:10:24,700 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:10:48,693 [Worker-26: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bajajhealth:DestinationHashGenerator:0.0.1-SNAPSHOT @ D:\E-Clothing\SpringBootApi\DestinationHashGenerator\pom.xml.
+2024-08-28 21:10:49,126 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.12.8/micrometer-observation-1.12.8.pom
+2024-08-28 21:10:49,130 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.12.8/micrometer-observation-1.12.8.pom
+2024-08-28 21:10:49,198 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.12.8/micrometer-commons-1.12.8.pom
+2024-08-28 21:10:49,202 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.12.8/micrometer-commons-1.12.8.pom
+2024-08-28 21:10:49,275 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.pom
+2024-08-28 21:10:49,279 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.pom
+2024-08-28 21:10:49,328 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.9/slf4j-parent-2.0.9.pom
+2024-08-28 21:10:49,340 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.9/slf4j-parent-2.0.9.pom
+2024-08-28 21:10:49,368 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-bom/2.0.9/slf4j-bom-2.0.9.pom
+2024-08-28 21:10:49,371 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-bom/2.0.9/slf4j-bom-2.0.9.pom
+2024-08-28 21:10:49,412 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.pom
+2024-08-28 21:10:49,421 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.pom
+2024-08-28 21:10:49,461 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.pom
+2024-08-28 21:10:49,470 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.pom
+2024-08-28 21:10:49,495 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.14.15/byte-buddy-parent-1.14.15.pom
+2024-08-28 21:10:49,532 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.14.15/byte-buddy-parent-1.14.15.pom
+2024-08-28 21:10:49,567 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.pom
+2024-08-28 21:10:49,570 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.pom
+2024-08-28 21:10:49,606 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api-parent/4.0.0/jakarta.xml.bind-api-parent-4.0.0.pom
+2024-08-28 21:10:49,608 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api-parent/4.0.0/jakarta.xml.bind-api-parent-4.0.0.pom
+2024-08-28 21:10:49,648 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.pom
+2024-08-28 21:10:49,657 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.pom
+2024-08-28 21:10:49,685 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.pom
+2024-08-28 21:10:49,688 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.pom
+2024-08-28 21:10:49,731 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-runtime-parent/4.0.2/jaxb-runtime-parent-4.0.2.pom
+2024-08-28 21:10:49,736 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-runtime-parent/4.0.2/jaxb-runtime-parent-4.0.2.pom
+2024-08-28 21:10:49,765 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-parent/4.0.2/jaxb-parent-4.0.2.pom
+2024-08-28 21:10:49,775 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-parent/4.0.2/jaxb-parent-4.0.2.pom
+2024-08-28 21:10:49,812 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/xml/bind/jaxb-bom-ext/4.0.2/jaxb-bom-ext-4.0.2.pom
+2024-08-28 21:10:49,816 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/xml/bind/jaxb-bom-ext/4.0.2/jaxb-bom-ext-4.0.2.pom
+2024-08-28 21:10:49,852 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-bom/4.0.2/jaxb-bom-4.0.2.pom
+2024-08-28 21:10:49,856 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-bom/4.0.2/jaxb-bom-4.0.2.pom
+2024-08-28 21:10:49,886 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/ee4j/project/1.0.8/project-1.0.8.pom
+2024-08-28 21:10:49,890 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/ee4j/project/1.0.8/project-1.0.8.pom
+2024-08-28 21:10:49,928 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.pom
+2024-08-28 21:10:49,931 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.pom
+2024-08-28 21:10:49,966 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.1/jakarta.activation-api-2.1.1.pom
+2024-08-28 21:10:49,975 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.1/jakarta.activation-api-2.1.1.pom
+2024-08-28 21:10:50,006 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.pom
+2024-08-28 21:10:50,014 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.pom
+2024-08-28 21:10:50,047 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation-project/2.0.0/angus-activation-project-2.0.0.pom
+2024-08-28 21:10:50,055 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation-project/2.0.0/angus-activation-project-2.0.0.pom
+2024-08-28 21:10:50,092 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.pom
+2024-08-28 21:10:50,095 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.pom
+2024-08-28 21:10:50,133 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-txw-parent/4.0.2/jaxb-txw-parent-4.0.2.pom
+2024-08-28 21:10:50,137 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-txw-parent/4.0.2/jaxb-txw-parent-4.0.2.pom
+2024-08-28 21:10:50,169 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.pom
+2024-08-28 21:10:50,172 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.pom
+2024-08-28 21:10:50,206 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons/4.1.1/istack-commons-4.1.1.pom
+2024-08-28 21:10:50,219 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons/4.1.1/istack-commons-4.1.1.pom
+2024-08-28 21:10:50,285 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.1.9/spring-core-6.1.9.pom
+2024-08-28 21:10:50,289 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.1.9/spring-core-6.1.9.pom
+2024-08-28 21:10:50,331 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.1.9/spring-jcl-6.1.9.pom
+2024-08-28 21:10:50,335 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.1.9/spring-jcl-6.1.9.pom
+2024-08-28 21:10:50,375 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.1.9/spring-beans-6.1.9.pom
+2024-08-28 21:10:50,379 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.1.9/spring-beans-6.1.9.pom
+2024-08-28 21:10:50,439 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.pom
+2024-08-28 21:10:50,443 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.pom
+2024-08-28 21:10:50,490 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.2/slf4j-parent-2.0.2.pom
+2024-08-28 21:10:50,497 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.2/slf4j-parent-2.0.2.pom
+2024-08-28 21:10:50,529 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.1.9/spring-orm-6.1.9.pom
+2024-08-28 21:10:50,533 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.1.9/spring-orm-6.1.9.pom
+2024-08-28 21:10:50,570 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/6.1.9/spring-jdbc-6.1.9.pom
+2024-08-28 21:10:50,572 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/6.1.9/spring-jdbc-6.1.9.pom
+2024-08-28 21:10:50,609 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.1.9/spring-tx-6.1.9.pom
+2024-08-28 21:10:50,612 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.1.9/spring-tx-6.1.9.pom
+2024-08-28 21:10:50,641 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.1.9/spring-context-6.1.9.pom
+2024-08-28 21:10:50,646 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.1.9/spring-context-6.1.9.pom
+2024-08-28 21:10:50,696 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.1.9/spring-aop-6.1.9.pom
+2024-08-28 21:10:50,698 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.1.9/spring-aop-6.1.9.pom
+2024-08-28 21:10:50,757 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.1.9/spring-expression-6.1.9.pom
+2024-08-28 21:10:50,760 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.1.9/spring-expression-6.1.9.pom
+2024-08-28 21:10:50,804 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.pom
+2024-08-28 21:10:50,810 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.pom
+2024-08-28 21:10:50,846 [Worker-26: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier  to /SpringBootApi/target/classes
+2024-08-28 21:10:50,872 [Worker-26: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier  to /SpringBootApi/target/classes
+2024-08-28 21:10:50,970 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar
+2024-08-28 21:10:50,990 [Worker-26: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar
+2024-08-28 21:10:51,028 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar
+2024-08-28 21:10:51,070 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar
+2024-08-28 21:10:51,100 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar
+2024-08-28 21:10:51,107 [BasicRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar
+2024-08-28 21:10:51,111 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar
+2024-08-28 21:10:51,141 [BasicRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar
+2024-08-28 21:10:51,141 [BasicRepositoryConnector-repo.maven.apache.org-1-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar
+2024-08-28 21:10:51,148 [BasicRepositoryConnector-repo.maven.apache.org-1-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.jar
+2024-08-28 21:10:51,151 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar
+2024-08-28 21:10:51,152 [BasicRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar
+2024-08-28 21:10:51,170 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar
+2024-08-28 21:10:51,214 [BasicRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar
+2024-08-28 21:10:51,216 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.1.9/spring-orm-6.1.9.jar
+2024-08-28 21:10:51,217 [BasicRepositoryConnector-repo.maven.apache.org-1-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar
+2024-08-28 21:10:51,225 [BasicRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar
+2024-08-28 21:10:51,312 [BasicRepositoryConnector-repo.maven.apache.org-1-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.1.9/spring-context-6.1.9.jar
+2024-08-28 21:10:51,313 [BasicRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.1.9/spring-tx-6.1.9.jar
+2024-08-28 21:10:51,349 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.1.9/spring-orm-6.1.9.jar
+2024-08-28 21:10:51,492 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.1.9/spring-beans-6.1.9.jar
+2024-08-28 21:10:51,622 [BasicRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.1.9/spring-tx-6.1.9.jar
+2024-08-28 21:10:51,640 [BasicRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar
+2024-08-28 21:10:51,761 [BasicRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.1.9/spring-core-6.1.9.jar
+2024-08-28 21:10:51,768 [BasicRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.1.9/spring-jcl-6.1.9.jar
+2024-08-28 21:10:51,792 [BasicRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.1.9/spring-jcl-6.1.9.jar
+2024-08-28 21:10:51,863 [BasicRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar
+2024-08-28 21:10:51,871 [BasicRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar
+2024-08-28 21:10:51,953 [BasicRepositoryConnector-repo.maven.apache.org-1-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.1.9/spring-context-6.1.9.jar
+2024-08-28 21:10:51,971 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.1.9/spring-beans-6.1.9.jar
+2024-08-28 21:10:52,025 [BasicRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar
+2024-08-28 21:10:52,027 [BasicRepositoryConnector-repo.maven.apache.org-1-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.12.8/micrometer-observation-1.12.8.jar
+2024-08-28 21:10:52,037 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.12.8/micrometer-commons-1.12.8.jar
+2024-08-28 21:10:52,051 [BasicRepositoryConnector-repo.maven.apache.org-1-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.12.8/micrometer-observation-1.12.8.jar
+2024-08-28 21:10:52,054 [BasicRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.12.8/micrometer-commons-1.12.8.jar
+2024-08-28 21:10:52,054 [BasicRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar
+2024-08-28 21:10:52,555 [BasicRepositoryConnector-repo.maven.apache.org-1-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.jar
+2024-08-28 21:10:52,582 [BasicRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.1.9/spring-core-6.1.9.jar
+2024-08-28 21:10:52,833 [Worker-26: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:SpringBootApi:0.0.1-SNAPSHOT @ D:\E-Clothing\SpringBootApi\SpringBootApi\pom.xml.
+2024-08-28 21:10:53,322 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:10:53,325 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:10:53,974 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:10:53,976 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:10:54,168 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final-sources.jar
+2024-08-28 21:10:54,209 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final-sources.jar
+2024-08-28 21:10:54,212 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss.logging:jboss-logging:3.5.0.Final
+2024-08-28 21:10:54,331 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15-sources.jar
+2024-08-28 21:10:54,575 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15-sources.jar
+2024-08-28 21:10:54,579 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for net.bytebuddy:byte-buddy:1.14.15
+2024-08-28 21:10:54,711 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0-sources.jar
+2024-08-28 21:10:54,872 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0-sources.jar
+2024-08-28 21:10:54,875 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for jakarta.xml.bind:jakarta.xml.bind-api:4.0.0
+2024-08-28 21:10:54,974 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0-sources.jar
+2024-08-28 21:10:55,010 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0-sources.jar
+2024-08-28 21:10:55,014 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for jakarta.activation:jakarta.activation-api:2.1.0
+2024-08-28 21:10:55,133 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2-sources.jar
+2024-08-28 21:10:55,362 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2-sources.jar
+2024-08-28 21:10:55,364 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.glassfish.jaxb:jaxb-runtime:4.0.2
+2024-08-28 21:10:55,491 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2-sources.jar
+2024-08-28 21:10:55,582 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2-sources.jar
+2024-08-28 21:10:55,585 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.glassfish.jaxb:jaxb-core:4.0.2
+2024-08-28 21:10:55,689 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0-sources.jar
+2024-08-28 21:10:55,694 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0-sources.jar
+2024-08-28 21:10:55,698 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.eclipse.angus:angus-activation:2.0.0
+2024-08-28 21:10:55,780 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2-sources.jar
+2024-08-28 21:10:55,816 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2-sources.jar
+2024-08-28 21:10:55,819 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.glassfish.jaxb:txw2:4.0.2
+2024-08-28 21:10:55,908 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1-sources.jar
+2024-08-28 21:10:55,916 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1-sources.jar
+2024-08-28 21:10:55,918 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.sun.istack:istack-commons-runtime:4.1.1
+2024-08-28 21:10:56,007 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.1.9/spring-orm-6.1.9-sources.jar
+2024-08-28 21:10:56,131 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.1.9/spring-orm-6.1.9-sources.jar
+2024-08-28 21:10:56,135 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-orm:6.1.9
+2024-08-28 21:10:56,251 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.1.9/spring-context-6.1.9-sources.jar
+2024-08-28 21:10:56,646 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.1.9/spring-context-6.1.9-sources.jar
+2024-08-28 21:10:56,649 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-context:6.1.9
+2024-08-28 21:10:56,771 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.1.9/spring-tx-6.1.9-sources.jar
+2024-08-28 21:10:56,908 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.1.9/spring-tx-6.1.9-sources.jar
+2024-08-28 21:10:56,910 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-tx:6.1.9
+2024-08-28 21:10:57,007 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.1.9/spring-beans-6.1.9-sources.jar
+2024-08-28 21:10:57,518 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.1.9/spring-beans-6.1.9-sources.jar
+2024-08-28 21:10:57,520 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-beans:6.1.9
+2024-08-28 21:10:57,614 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.1.9/spring-core-6.1.9-sources.jar
+2024-08-28 21:10:57,864 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.1.9/spring-core-6.1.9-sources.jar
+2024-08-28 21:10:57,868 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-core:6.1.9
+2024-08-28 21:10:58,010 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.1.9/spring-jcl-6.1.9-sources.jar
+2024-08-28 21:10:58,014 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.1.9/spring-jcl-6.1.9-sources.jar
+2024-08-28 21:10:58,017 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-jcl:6.1.9
+2024-08-28 21:10:58,132 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0-sources.jar
+2024-08-28 21:10:58,158 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0-sources.jar
+2024-08-28 21:10:58,160 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for jakarta.annotation:jakarta.annotation-api:2.0.0
+2024-08-28 21:10:58,264 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2-sources.jar
+2024-08-28 21:10:58,326 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2-sources.jar
+2024-08-28 21:10:58,328 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.slf4j:slf4j-api:2.0.2
+2024-08-28 21:10:58,447 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.12.8/micrometer-observation-1.12.8-sources.jar
+2024-08-28 21:10:58,491 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.12.8/micrometer-observation-1.12.8-sources.jar
+2024-08-28 21:10:58,494 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.micrometer:micrometer-observation:1.12.8
+2024-08-28 21:10:58,588 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.12.8/micrometer-commons-1.12.8-sources.jar
+2024-08-28 21:10:58,634 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.12.8/micrometer-commons-1.12.8-sources.jar
+2024-08-28 21:10:58,635 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.micrometer:micrometer-commons:1.12.8
+2024-08-28 21:11:40,465 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:11:40,467 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:11:45,896 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:11:45,898 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:17:15,223 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-08-28 21:17:15,225 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-08-28 21:17:30,105 [Worker-27: Launching Main] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier null to /SpringBootApi/target/classes
+2024-08-28 21:17:30,180 [Worker-27: Launching Main] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier null to /SpringBootApi/target/classes
+2024-08-28 21:17:30,249 [Worker-27: Launching Main] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier null to /SpringBootApi/target/classes
+2024-08-28 21:17:42,068 [Worker-28: Launching Main] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier null to /SpringBootApi/target/classes
+2024-08-28 21:17:42,136 [Worker-28: Launching Main] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier null to /SpringBootApi/target/classes
+2024-08-28 21:17:42,202 [Worker-28: Launching Main] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier null to /SpringBootApi/target/classes
+2024-08-28 21:27:43,221 [Worker-27: Launching Main] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier null to /SpringBootApi/target/classes
+2024-08-28 21:27:43,295 [Worker-27: Launching Main] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier null to /SpringBootApi/target/classes
+2024-08-28 21:27:43,359 [Worker-27: Launching Main] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier null to /SpringBootApi/target/classes
+2024-08-30 19:03:30,341 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-01 21:15:19,603 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-01 22:21:39,697 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-01 22:32:57,576 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-01 22:32:57,595 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-01 22:32:57,599 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2024-09-12 23:44:54,944 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-12 23:45:03,028 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-12 23:45:03,078 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-12 23:45:03,093 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2024-09-12 23:45:05,464 [Worker-1: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier  to /SpringBootApi/target/classes
+2024-09-12 23:45:05,804 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-09-12 23:45:05,812 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2024-09-13 00:19:20,548 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-10-13 13:55:15,572 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-13 13:55:16,568 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2024-12-13 17:13:14,168 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-12-13 17:13:14,701 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2024-12-13 18:16:42,650 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-13 18:16:42,743 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-13 18:16:42,750 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2024-12-13 18:16:45,466 [Worker-21: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SpringBootApi: com.example:SpringBootApi:0.0.1-SNAPSHOT with classifier  to /SpringBootApi/target/classes
+2024-12-13 18:16:45,857 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\main\resources
+2024-12-13 18:16:45,869 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\DestinationHashGenerator\src\test\resources
+2025-01-25 11:03:38,902 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-01-25 11:50:31,700 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-25 11:50:31,786 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-25 11:50:31,792 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2025-01-25 11:54:39,945 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-25 11:54:39,987 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-25 11:54:39,993 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2025-01-25 11:57:56,276 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-25 11:57:56,365 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-25 11:57:56,371 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2025-01-25 11:58:15,589 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-25 11:58:15,596 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-25 11:58:15,600 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\E-Clothing\SpringBootApi\SpringBootApi\src\test\resources
+2025-08-30 12:11:10,109 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2025-08-30 12:11:16,831 [Worker-15: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/3.3.2/spring-boot-starter-parent-3.3.2.pom
+2025-08-30 12:11:17,054 [Worker-15: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.pom
+2025-08-30 12:11:17,073 [Worker-15: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+2025-08-30 12:11:17,097 [Worker-15: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
+2025-08-30 12:11:17,297 [Worker-15: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.pom

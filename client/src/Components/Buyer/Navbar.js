@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 export default function Navbar() {
   const { isLoggedIn } = useSelector((store) => store.User);
   return (
-    <nav style={{ background: "rgb(170, 222, 210)" }}>
+    <nav style={{ background: "aquamarine" }}>
       <div className="nav-center">
         <div className="nav-header">
           {/* <img src="" alt="logo" /> */}

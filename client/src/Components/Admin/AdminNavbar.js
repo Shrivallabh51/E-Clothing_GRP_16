@@ -30,10 +30,10 @@ const AdminNavbar = () => {
         <li>
           <Link to="/admin/Orders">Orders</Link>
         </li>
-        {/* 
+
         <li>
-          <Link to="/admin//Profile">Profile</Link>
-        </li> */}
+          <Link to="/admin/products">Productsn</Link>
+        </li>
       </ul>
       <div className="dropdown" style={{ zIndex: 5 }}>
         <button

@@ -184,11 +184,14 @@ export const CartSlice = createSlice({
 
       .addCase(decProductQty.pending, (state) => {
         state.isQtyChange = false;
+        console.log("pending");
       })
       .addCase(decProductQty.fulfilled, (state, action) => {
         state.isQtyChange = true;
       })
-      .addCase(decProductQty.rejected, (state, action) => {});
+      .addCase(decProductQty.rejected, (state, action) => {
+        console.log("rejected");
+      });
   },
 });
 

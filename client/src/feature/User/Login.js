@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useDispatch } from "react-redux";
 import { loginUser } from "./UserSlice";
@@ -11,14 +11,14 @@ function Login() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
+    
   const { user, status } = useSelector((store) => store.User);
-
+  
   useEffect(() => {
     if (status === "succeeded") {
-      if (user.rId === 3) {
+      if (user.rId === "3") {
         navigate("/seller");
-      } else if (user.rId === 1) {
+      } else if (user.rId === "1") {
         navigate("/admin");
       } else {
         navigate("/");
@@ -37,11 +37,8 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //console.log("Login:", { trimmedUsername, trimmedPassword });
 
-    dispatch(loginUser({ username, password }));
-    // console.log("user");
-    // console.log(user);
+    dispatch(loginUser({ userName: username, password, navigate }));
   };
   //  console.log(username);
 

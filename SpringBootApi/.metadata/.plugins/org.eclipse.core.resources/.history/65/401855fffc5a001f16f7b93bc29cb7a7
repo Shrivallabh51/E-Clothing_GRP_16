@@ -1,8 +1,0 @@
-package com.example.demo.entities;
-
-public class CartsDto {
-	 private int cartId;
-	    private int stockQty;
-	    private UserDTO user;
-	    private ProductDTO product;
-}

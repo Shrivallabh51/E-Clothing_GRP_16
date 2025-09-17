@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { act } from "react";
 import { toast } from "react-toastify";
+import { jwtDecode } from "jwt-decode";
 
 const initialState = {
   user: JSON.parse(localStorage.getItem("user")) || {},
@@ -11,14 +11,14 @@ const initialState = {
 
 export const loginUser = createAsyncThunk(
   "User/loginUser",
-  async ({ username, password }, thunkAPI) => {
+  async ({ userName, password }, thunkAPI) => {
     try {
       const response = await fetch("https://localhost:7268/api/Account/Login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ username, password }),
+        body: JSON.stringify({ userName, password }),
       });
 
       if (response.status === 400) {
@@ -37,8 +37,21 @@ export const loginUser = createAsyncThunk(
       }
 
       const data = await response.json();
-      // console.log(data);
-      return data; // This will be the fulfilled payload
+      const token = data.token; // Extract the token from the response
+
+      // Decode the JWT token to extract claims
+      const decodedToken = jwtDecode(token);
+      const username = decodedToken.sub; // Assuming 'sub' is the username
+      const roleFromToken =
+        decodedToken[
+          "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+        ]; // Assuming 'role' is stored
+      const userId = decodedToken.userId || decodedToken["userId"] || null;
+
+      const user = { token, username, rId: roleFromToken, userId };
+      localStorage.setItem("user", JSON.stringify(user));
+
+      return { token, username, rId: roleFromToken, userId };
     } catch (error) {
       console.log(error.message);
       return thunkAPI.rejectWithValue(" The server is currently unavailable");
@@ -53,11 +66,9 @@ export const UserSlice = createSlice({
     logout: (state) => {
       localStorage.removeItem("user");
       state.user = {};
-      state.isLoggedIn = false;
-      state.error = null;
-      state.status = "idle";
     },
   },
+  
   extraReducers: (builder) => {
     builder
       .addCase(loginUser.pending, (state) => {
@@ -66,12 +77,7 @@ export const UserSlice = createSlice({
       .addCase(loginUser.fulfilled, (state, action) => {
         state.status = "succeeded";
         localStorage.setItem("user", JSON.stringify(action.payload));
-        // console.log("fullfilled");
-        //console.log(JSON.stringify(action.payload));
-        state.isLoggedIn = true;
         state.user = action.payload;
-        //console.log("user" + state.user.username);
-        //  console.log(state.user);
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.status = "failed";

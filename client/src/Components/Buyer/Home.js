@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getCart } from "../../feature/Cart/CartSlice";
 
 const Home = () => {
   const dispatch = useDispatch();
+  const user = useSelector((state) => state.user);
+
   useEffect(() => {
     // console.log("rerender");
     dispatch(getCart());
-  }, [dispatch]);
+  }, [dispatch, user]);
 
   return (
     <section className="section-center">
